@@ -1,0 +1,9 @@
+h2{
+    width: 500px;
+    color: red;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
