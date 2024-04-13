@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import DestrucProps from './Component/DestrucProps';
+import img1 from './Image/Image-1.jpg';
+import img2 from './Image/image-2.jpg';
+import img3 from './Image/Image-3.jpg';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <DestrucProps img = {img1} name="John Doe" descr="Heading must have content and the content must be accessible by a reader"/>
+        <DestrucProps img = {img2} name="John Doe" descr="Heading must have content and the content must be accessible by a reader"/>
+        <DestrucProps img = {img3} name="John Doe" descr="Heading must have content and the content must be accessible by a reader"/>
     </div>
   );
 }
