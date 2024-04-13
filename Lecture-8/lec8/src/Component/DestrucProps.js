@@ -1,12 +1,12 @@
 import React from 'react'
 
-function DestrucProps() {
+function DestrucProps(img ,name,descr) {
   return (
     <div>
-      <img src='' alt='image'></img>
-      <h1></h1>
+      <img src={img} alt='image'></img>
+      <h1>{name}</h1>
       <div>
-        <p></p>
+        <p>{descr}</p>
       </div>
     </div>
   )
