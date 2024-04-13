@@ -1,16 +1,23 @@
-import { createContext } from 'react';
+
 import './App.css';
 import CompA from './UseContext/CompA';
+import { createContext } from 'react';
+const data = createContext();
+const data1 = createContext();
 function App() {
-  const Context1 = createContext()
+  const name = "Ganga"
+  const cast = "Gamit"
   return (
     <div className="App">
-      <Context1.Provider value="abc">
-      <CompA/>
+      <data.Provider value={name}>
+      <data1.Provider value={cast}>
 
-      </Context1.Provider>
+     <CompA/>
+      </data1.Provider>
+      </data.Provider>
     </div>
   );
 }
-export  {Context1}
+export {data,data1}
 export default App;
+

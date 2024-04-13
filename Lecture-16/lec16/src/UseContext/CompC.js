@@ -1,12 +1,13 @@
 import React,{useContext} from 'react'
-import { Context1 } from '../App';
+import { data,data1 } from '../App'
 
 function CompC() {
-    const name= useContext(Context1)
+    const firstName= useContext(data)
+    const lastname = useContext(data1)
   return (
     <div>
     
-      <h1>This is ...{name}</h1>
+      <h1>my name is {firstName} {lastname} </h1>
     </div>
   )
 }
