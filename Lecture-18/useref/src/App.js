@@ -8,7 +8,7 @@ function App() {
   const URef = ()=>{
     ref.current.focus();
     ref.current.style.color="red";
-    ref.current.style.backgraoundColor="yellow";
+    ref.current.style.backgroundColor="yellow";
   }
   return (
     <div className="App">

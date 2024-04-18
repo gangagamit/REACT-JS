@@ -1,4 +1,5 @@
-import React,{useEffect,useState} from 'react'
+import React,{useEffect,useState} from 'react';
+
 function Useeffect() {
     const [plus,setPlus] = useState(0)
     const [minus,setMinus] = useState(0)
