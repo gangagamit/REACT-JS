@@ -5,7 +5,7 @@ function Home() {
     <div>
       <section>
 
-        <div className='grid lg:grid-cols-2 gap-4 md:grid-cols-1 p-5'>
+        <div className=' grid lg:grid-cols-2 gap-4 md:grid-cols-1 p-5 w-full'>
             <div className='banner-1 p-20'>
                
                 <div className='flex text-start'>
