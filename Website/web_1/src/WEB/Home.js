@@ -6,7 +6,7 @@ function Home() {
             <div className=' w-screen grid grid-cols-2'>
                     <div className='banner-1'>
                         
-                            <p>Accessories</p>
+                         ssduui
                                           
                     </div>
             </div>

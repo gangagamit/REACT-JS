@@ -3,7 +3,7 @@ import Categories from './Categories'
 
 function Header_2() {
     return (
-        <div className=' container  flex justify-between items-center'>
+        <div className=' container  flex justify-around items-center w-screen'>
             {/* <div className=' flex justify-between items-center'> */}
 
             <div className='part-1'>
