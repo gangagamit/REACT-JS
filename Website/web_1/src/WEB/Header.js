@@ -6,7 +6,7 @@ import img4 from '../Image/f-brand-icon-01.png'
 import img5 from '../Image/lang-flag.png'
 function Header() {
     return (
-            <div className=' container flex justify-center items-center'>
+            <div className=' container flex justify-between items-center'>
                 <header>
                      
                            
@@ -20,7 +20,7 @@ function Header() {
                             <ul className='flex justify-center items-center'>
                                 <li>
                                     <a href='#'>
-                                        <input type='text' placeholder='Search products..' className=' border-slate-50 rounded bg-slate-50  h-10 w-[500px] p-2'/>
+                                        <input type='text' placeholder='Search products..' className=' border-slate-50 rounded bg-slate-50  h-10 w-[600px] p-2'/>
 
                                     </a>
                                 </li>

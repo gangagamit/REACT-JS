@@ -11,7 +11,7 @@ function TopCateg() {
       <section className=' bg-slate-50 p-8'>
                 <h1 className=' font-bold text-2xl text-start'>Top <span className=' text-pink-700 text-3xl underline'>Categories</span></h1>
             <div>
-                <div className='grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 mt-20 '>
+                <div className='grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 gap-3 mt-20 '>
                     <div className='div-1 text-center'>
                             <p>20</p>
                              <div className='p-3  bg-slate-100 rounded-full h-48  flex justify-center items-center'>

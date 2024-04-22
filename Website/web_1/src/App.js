@@ -12,18 +12,20 @@ import TopCateg from './WEB/TopCateg';
 import PopularProduct from './WEB/PopularProduct';
 import Pots from './WEB/Pots';
 import Follow from './WEB/Follow';
+import Welcome from './WEB/Welcome';
 
 function App() {
   return (
     <div className="App">
+      <Welcome/>
       <Header/>
       <Header_2/>
       <Home/>
-      {/* <TopCateg/> */}
-      {/* <PopularProduct/>
+      <TopCateg/>
+      <PopularProduct/>
       <Pots/>
       <Follow/>
-      <Footer/> */}
+      <Footer/>
     </div>
   );
 }
