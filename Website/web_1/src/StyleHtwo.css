@@ -1,0 +1,26 @@
+.nav-1{
+        position: relative;
+}
+
+.homelist{
+    display: none;
+    position: absolute;
+    border-top: 2px solid rgb(222, 34, 34);
+    top: 100%;
+    width: 180px;
+    outline: 1px solid white;
+    background-color: white;
+    padding: 10px;
+    font-weight: 400;
+    
+    height: fit-content;
+}
+ul li:hover .homelist{
+    display: block;
+    position: absolute;
+    text-align: left;
+    
+}
+ul li:hover .homelist{
+    display: block;
+}

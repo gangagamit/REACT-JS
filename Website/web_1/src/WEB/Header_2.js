@@ -1,69 +1,101 @@
 import React from 'react'
+import Categories from './Categories'
 
 function Header_2() {
-  return (
-    <div className='flex justify-between p-11'>
-      <ul>
-        <li><a href='#'>
-            <button className='text'><i class="fa-solid fa-bars"></i><span >Categories</span></button></a>
-            <div className='dropdown w-40'>
-                <ul>
-                    <li><a href='#'><i class="fa-regular fa-user text-red-500"></i><span className='mx-2'>Candles</span></a></li>
-                    <li><a href='#' className='hover:text-red-500'><i class="ri-flower-line text-red-500"></i><span className='mx-2'>Handmade</span></a></li>
-                    <li><a href='#' className='hover:text-red-500'><i class="ri-gift-2-line text-red-500"></i><span className='mx-2'>Gift sets</span></a></li>
-                    <li> <a href='#' className='hover:text-red-500'><i class="fa-regular fa-face-smile text-red-500"></i><span className='mx-2'>Plastic Gifts</span></a></li>
-                    <li><a href='#' className='hover:text-red-500'><i class="ri-football-line text-red-500"></i><span className='mx-2'>Handy Cream</span></a></li>
-                    <li><a href='#' className='hover:text-red-500'><i class="fa-regular fa-chess-queen text-red-500"></i><span className='mx-2'>Cosmetics</span></a></li>
-                    <li> <a href='#' className='hover:text-red-500'><i class="fa-solid fa-gift text-red-500"></i><span className='mx-2'>Silk Accessories</span></a></li>
-                    <li className='bg-gray-100'><a href='#' >Value of the day Top 100 offers New Arrivals</a></li>
-                </ul>
-            </div>
-        </li>
-      </ul>
-      <ul className='demo'>
-            <li><a href='#'><span className=' font-semibold '>Home <i class="fa-solid fa-angle-down text-slate-400"></i></span></a>
-                    <div className='homemenu'>
-                        <ul className='text-left'>
-                            <li>Wooden Home</li>
-                            <li>Fashion Home</li>
-                            <li>Furniture Home</li>
-                            <li>Cosmetics Home</li>
-                            <li>Food Grocery</li>
-                        </ul>
-                    </div>
-            </li>
-            <li><a href='#'><span className=' font-semibold '>Shop <i class="fa-solid fa-angle-down text-slate-400"></i></span></a>
-            <div className='homemenu'>
-                        <ul className='text-left'>
-                            <li>Shop</li>
-                            <li>Shop 2</li>
-                            <li>Shop details</li>
-                            <li>Shop details 2</li>
-                            <li>location</li>
-                            <li>Cart</li>
-                            <li>Sign In</li>
-                        </ul>
-                    </div>
+    return (
+        <div className=' container  flex justify-between items-center'>
+            {/* <div className=' flex justify-between items-center'> */}
 
-            </li>
-            <li><a href='#'><span className=' font-semibold '>Pages <i class="fa-solid fa-angle-down text-slate-400"></i></span></a></li>
-            <li><a href='#'><span className=' font-semibold '>Blog <i class="fa-solid fa-angle-down text-slate-400"></i></span></a>
-            
-            <div className='homemenu'>
-                        <ul className='text-left'>
-                            <li>Blog</li>
-                            <li>Blog details</li>
-                        </ul>
+            <div className='part-1'>
+                <div className='flex justify-center items-center'>
+
+                    <div>
+                        <Categories/>
                     </div>
-            </li>
-            <li><a href='#'><span className=' font-semibold '>Contact</span></a></li>
-        </ul>
-        <div className='flex'>
-            <p className=' hover:text-red-600'><i class="ri-phone-line text-red-500"></i><span className='hover:text-red-600 font-bold'>908. 408. 501. 89</span></p>
-            <p className=' hover:text-red-600 ml-5'><i class="ri-map-pin-line text-red-500"></i><span className='hover:text-red-600 font-bold'>Find Store</span></p>
+                <nav>
+
+                    <ul>
+                        <li>
+                            <a href='#'>
+                                <p className=' hover:text-pink-500'>Home <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
+                            </a>
+                            <div className='homelist'>
+                                <li><a href='#' className=' hover:text-pink-500'>Wooden Home</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Fashion Home</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Furniture Home</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Cosmetics Home</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Food  Grocery</a></li>
+                            </div>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <p>Shop <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
+                            </a>
+                            <div className='homelist'>
+                                <li><a href='#' className=' hover:text-pink-500'>Shop</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Shop2</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Shop Details</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Shop Details 2</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Shop location</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Cart</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Sign In</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Checkout</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Wishlist</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>product track</a></li>
+                            </div>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <p className=' hover:text-pink-500'>Pages <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
+                            </a>
+                            <div className='homelist'>
+
+
+                                <li><a href='#' className=' font-semibold text-sm hover:text-pink-500'>page Layout</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Shop Filters V1</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Shop Filters V1</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Shop Shidebar</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Shop Right Shidebar</a></li>
+                                <li><a href='#' className=' hover:text-pink-500'>Shop list view</a></li>
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href='#'>
+                                <p className='hover:text-pink-500'>Blogs <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
+                            </a>
+                            <div className='homelist'>
+                                <li><a href='#' className='hover:text-pink-500'>Blog</a></li>
+                                <li><a href='#' className='hover:text-pink-500'>Blog Details</a></li>
+                            </div>
+                        </li>
+                        <li><a href='#' className='hover:text-pink-500'>Contact</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+            {/* part-1 close */}
+
+            {/* part-2 start */}
+
+                    
+                <div className='num flex justify-between items-center gap-5'>
+                    <div className='num-1 flex'>
+                        <span><i class="ri-phone-line text-red-500 hover:text-pink-500"></i></span>
+                        <p className='hover:text-pink-500'>908. 408. 501. 89</p>
+                    </div>
+                    <div className='num-2 flex'>
+                        <span><i class="ri-map-pin-line text-red-500 hover:text-pink-500"></i></span>
+                        <p className=' hover:text-pink-500'>Find Store</p>
+                    </div>
+                </div>
+
+            {/* part-2 close */}
+            {/* </div> */}
         </div>
-    </div>
-  )
+
+    )
 }
 
 export default Header_2
+

@@ -6,7 +6,6 @@ function CompC() {
     const lastname = useContext(data1)
   return (
     <div>
-    
       <h1>my name is {firstName} {lastname} </h1>
     </div>
   )
