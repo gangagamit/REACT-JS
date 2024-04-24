@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Categories from './Categories'
 
 function Header_2() {

@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './WEB/Header';
 import './Style.css';
@@ -13,7 +13,7 @@ import PopularProduct from './WEB/PopularProduct';
 import Pots from './WEB/Pots';
 import Follow from './WEB/Follow';
 import Welcome from './WEB/Welcome';
-import Homm from './WEB/Homm';
+// import Homm from './WEB/Homm';
 
 function App() {
   return (
