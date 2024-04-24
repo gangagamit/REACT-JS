@@ -4,7 +4,7 @@ import React from 'react'
 function Home() { 
   return ( 
     <div> 
-    <div className=' w-screen grid lg:grid-cols-2 gap-4 md:grid-cols-1 p-5'> 
+    <div className=' container grid lg:grid-cols-2 gap-24 md:grid-cols-1 p-3'> 
             <div className='banner-1 p-20 h-100'> 
                 
                 <div className='flex text-start'> 

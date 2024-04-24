@@ -6,7 +6,7 @@ import img4 from '../Image/f-brand-icon-01.png'
 import img5 from '../Image/lang-flag.png'
 function Header() {
     return (
-            <div className=' container flex justify-between items-center'>
+            <div className=' container flex justify-between items-center p-3'>
                 <header>
                      
                            

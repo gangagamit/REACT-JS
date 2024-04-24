@@ -2,7 +2,7 @@ import React from 'react'
 
 function Categories() {
   return (
-    <div className=' container'>
+    <div className=' container p-3'>
         <nav>
         <ul>
         <li><a href='#'>

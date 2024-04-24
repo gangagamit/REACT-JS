@@ -11,7 +11,7 @@ import img9 from '../Image/product-17.jpg';
 import img10 from '../Image/product-19.jpg';
 const PopularProduct = () => {
   return (
-    <div className='main p-5'>
+    <div className='main p-3'>
         <div className='container flex justify-between'>
             <div className='flex gap-2'>
                 <h1 className=' font-sans text-2xl font-bold'>

@@ -13,10 +13,12 @@ import PopularProduct from './WEB/PopularProduct';
 import Pots from './WEB/Pots';
 import Follow from './WEB/Follow';
 import Welcome from './WEB/Welcome';
+import Homm from './WEB/Homm';
 
 function App() {
   return (
     <div className="App">
+      {/* <Homm/> */}
       <Welcome/>
       <Header/>
       <Header_2/>
