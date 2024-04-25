@@ -7,7 +7,7 @@ function Usememo() {
     const Add = useMemo(function Count(){
         console.log("hello");
         return Minus + 5;
-    },Minus);
+    },[Minus]);
   return (
     <div>
       {Add}

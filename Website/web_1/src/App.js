@@ -13,20 +13,22 @@ import PopularProduct from './WEB/PopularProduct';
 import Pots from './WEB/Pots';
 import Follow from './WEB/Follow';
 import Welcome from './WEB/Welcome';
+import Shop from './WEB/Shop';
 // import Homm from './WEB/Homm';
 
 function App() {
   return (
     <div className="App">
       {/* <Homm/> */}
-      <Welcome/>
+      {/* <Welcome/>
       <Header/>
       <Header_2/>
       <Home/>
       <TopCateg/>
       <PopularProduct/>
       <Pots/>
-      <Follow/>
+      <Follow/> */}
+      <Shop/>
       <Footer/>
     </div>
   );

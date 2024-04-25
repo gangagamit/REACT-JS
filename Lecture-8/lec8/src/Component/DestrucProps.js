@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DestrucProps(img ,name,descr) {
+function DestrucProps({img,name,descr}) {
   return (
     <div>
       <img src={img} alt='image'></img>
