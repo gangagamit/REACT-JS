@@ -13,7 +13,7 @@ function About() {
                             <h1 className='text-4xl font-bold'>About Us</h1>
                             <h1 className='text-lg font-semibold'>Sample Headline</h1>
                             <div className='mt-2'>
-                                <p className='text-start line-clamp-4'>
+                                <p className='text-start line-clamp-4 text-slate-600 font-semibold'>
                                     Artical evident arrived express highest men did boy.Mistress sensible
                                     Admitro– Are You hunt for a set of best Bootstrap Laravel templates ends with us at Admitro . We provide you highly flexible and fully customizable designs that would elevate your amazing projects. Packed with powers of PHP, Bootstrap 4 and SASS, Admitro lets you fit into anything, anywhere Mobile, Desktop, Tablets.
                                 </p>

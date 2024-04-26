@@ -6,6 +6,7 @@ import './HeaderStyle.css';
 import Header_2 from './WEB/Header_2';
 import './StyleHtwo.css';
 import './HomeStyle.css';
+
 import Home from './WEB/Home';
 import Footer from './WEB/Footer';
 import TopCateg from './WEB/TopCateg';
@@ -20,15 +21,15 @@ function App() {
   return (
     <div className="App">
       {/* <Homm/> */}
-      {/* <Welcome/>
+      <Welcome/>
       <Header/>
       <Header_2/>
       <Home/>
       <TopCateg/>
       <PopularProduct/>
       <Pots/>
-      <Follow/> */}
-      <Shop/>
+      <Follow/>
+      {/* <Shop/> */}
       <Footer/>
     </div>
   );

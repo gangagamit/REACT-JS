@@ -1,9 +1,7 @@
-import React from 'react'
-import img1 from '../Image/logo.png'
-import img2 from '../Image/f-google.jpg'
-import img3 from '../Image/f-app.jpg'
-import img4 from '../Image/f-brand-icon-01.png'
-import img5 from '../Image/lang-flag.png'
+import React from 'react';
+import img1 from '../Image/logo.png';
+import img5 from '../Image/lang-flag.png';
+import '../Responsive.css';
 function Header() {
     return (
             <div className=' container flex justify-between items-center p-3'>
@@ -12,6 +10,9 @@ function Header() {
                            
                             
                         <nav className='flex justify-center items-center'>
+                       
+                                   <button className='.menu-logo'><i class="fa-solid fa-bars fa-2x"></i></button>
+                              
                             <ul>
                                 <li>  <img src={img1} alt='logo'></img>
                                 </li>
@@ -20,13 +21,13 @@ function Header() {
                             <ul className='flex justify-center items-center'>
                                 <li>
                                     <a href='#'>
-                                        <input type='text' placeholder='Search products..' className=' border-slate-50 rounded bg-slate-50  h-10 w-[600px] p-2'/>
+                                        <input type='text' placeholder='Search products..' className=' input-1 border-slate-50 rounded bg-slate-50  h-10 w-[600px] p-2'/>
 
                                     </a>
                                 </li>
                                 <li>
                                     <a href='#'>
-                                        <button className='flex border-neutral-400 gap-2'>
+                                        <button className='flex border-neutral-400 gap-2 btn-flag'>
                                             <img src={img5} alt='flag'></img>
                                             <p>English</p>
                                             <div className='list block'>

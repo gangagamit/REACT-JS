@@ -9,7 +9,7 @@ function Card({id,name,age,img}) {
               <div class="image-content">
                 <span class="overlay"></span>
                 <div class="card-image">
-                  <img src={img} alt="" class="card-img" className='h-[200px] w-[300px] m-auto block rounded-md w'/>
+                  <img src={img} alt="" class="card-img" className='h-[200px] w-[300px] m-auto block rounded-md'/>
                 </div>
               </div> 
               <div className="p-6 text-center">

@@ -1,37 +1,73 @@
-import React from 'react' 
- 
- 
-function Home() { 
-  return ( 
-    <div> 
-    <div className=' container grid lg:grid-cols-2 gap-24 md:grid-cols-1 p-3'> 
-            <div className='banner-1 p-20 h-100'> 
-                
-                <div className='flex text-start'> 
-                    <p className='text-pink-600 font'>Accessories</p> 
-                     
-                </div> 
-                <div className='text-start'> 
-                <p className=' text-5xl from-neutral-950'>Up to <span className='text-pink-600 font underline'>40% off</span> latest Creations</p> 
-                <button className='bg-white p-2 rounded mt-5 w-40'><span className='p-2'>Shop Now</span> <i class="fa-solid fa-arrow-right"></i></button> 
-                </div> 
-            </div> 
-            <div className='banner-2'> 
-              <div className='ban'> 
-                  <p className='text-start p-3 text-pink-600'>Hand made</p> 
-                  <p className='text-start font-sans font-semibold p-2'>New modern Stylist Crafts</p> 
-              </div> 
-              <div className='bann'> 
-              <p className='text-start p-3 text-pink-600'>Popular</p> 
-                  <p className='text-start font-sans font-semibold p-3'>Energy with our newest collection</p> 
-              </div> 
-            </div> 
-        </div> 
-       
-    </div> 
-  ) 
-} 
- 
+
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import '../Sliderstyle.css';
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import img1 from '../Image/banner-1.jpg';
+import img2 from '../Image/banner-2.jpg';
+import img3 from '../Image/banner-3.jpg';
+import '../HomeStyle.css';
+const Home = () => {
+  return (
+    <div>
+
+      <div className='slider_container'>
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+
+        >
+
+
+          <SwiperSlide>
+
+            <img src={img1} />
+
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img2} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={img3} />
+          </SwiperSlide>
+
+        </Swiper>
+        <div className='banner-2'>
+          <div className='ban'>
+            <p className='text-start p-3 text-pink-600'>Hand made</p>
+            <p className='text-start font-sans font-semibold p-2'>New modern Stylist Crafts</p>
+          </div>
+          <div className='bann'>
+            <p className='text-start p-3 text-pink-600'>Popular</p>
+            <p className='text-start font-sans font-semibold p-3'>Energy with our newest collection</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  )
+}
+
 export default Home
 
 

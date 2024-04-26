@@ -1,0 +1,8 @@
+.error{
+    font-family: 800;
+    letter-spacing: 20px;
+    background: url('../src/Image/milky-way.jpg') 50% 50%;
+    background-size: cover;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+}

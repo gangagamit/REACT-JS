@@ -1,10 +1,12 @@
 import React from 'react'
-import img1 from '../Image/shop-1.jpg'
+import '../BshopStyle.css';
 function Shop() {
   return (
-    <div className=' container'>
-        <div>
-            <img src={img1} alt='image'/>
+    <div>
+        <div className='shop-img'>
+              <div>
+                <p></p>
+              </div>
         </div>
     </div>
   )

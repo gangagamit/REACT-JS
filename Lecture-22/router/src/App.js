@@ -8,6 +8,7 @@ import Home from './Component/Home';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Nav from './Navbar/Nav';
 import './Navbar.css';
+import Navigaionerr from './Component/Navigaionerr';
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
               <Route path='/demo' element={<Demo/>}/>
               <Route path='/about' element={<About/>}/>
               <Route path='/feature' element={<Feature/>}/>
+              <Route path='*' element={<Navigaionerr/>}/>
           </Routes>
        </BrowserRouter>
     </div>
