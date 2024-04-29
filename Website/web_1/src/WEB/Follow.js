@@ -6,8 +6,8 @@ import img4 from '../Image/instagram-04.jpg';
 import img5 from '../Image/instagram-05.jpg';
 function Follow() {
   return (
-    <div className='mt-5 p-3'>
-        <div className=' container grid grid-cols-1'>
+    <div className='mt-5 p-3  container mx-auto'>
+        <div className=' grid grid-cols-1'>
         <h1 className='text-pink-500 text-lg'>Follow On</h1>
         <p><i class="fa-brands fa-instagram fa-2x"></i> <span className='text-3xl font-bold'>ninico-shop</span></p>
         </div>

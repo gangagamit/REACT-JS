@@ -7,7 +7,7 @@ function Categories() {
         <ul>
         <li><a href='#'>
             <button className='text'><i class="fa-solid fa-bars"></i><span >Categories</span></button></a>
-            <div className='dropdown w-40'>
+            <div className='dropdown w-40 z-10'>
                 <ul>
                     <li><a href='#'><i class="fa-regular fa-user text-red-500"></i><span className='mx-2'>Candles</span></a></li>
                     <li><a href='#' className='hover:text-red-500'><i class="ri-flower-line text-red-500"></i><span className='mx-2'>Handmade</span></a></li>

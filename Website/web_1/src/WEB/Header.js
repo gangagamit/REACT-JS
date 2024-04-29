@@ -1,17 +1,17 @@
 import React from 'react';
 import img1 from '../Image/logo.png';
 import img5 from '../Image/lang-flag.png';
-import '../Responsive.css';
+
 function Header() {
     return (
-            <div className=' container flex justify-between items-center p-3'>
+            <div className=' container mx-auto flex justify-between items-center p-3'>
                 <header>
                      
                            
                             
                         <nav className='flex justify-center items-center'>
                        
-                                   <button className='.menu-logo'><i class="fa-solid fa-bars fa-2x"></i></button>
+
                               
                             <ul>
                                 <li>  <img src={img1} alt='logo'></img>
@@ -61,12 +61,12 @@ function Header() {
                                     </a>
                                 </li>
                               
-                        <ul className='flex icon'>
+                        <ul className='flex icon justify-center items-center'>
                             <li><a href='#' className='absolute zero'>0</a></li>
-                            <li><a href='#' ><i class="ri-shopping-cart-2-line text-xl"></i></a></li>
-                            <li><a href='#'><i class="fa-regular fa-user text-xl"></i></a></li>
+                            <li><a href='#' ><i class="ri-shopping-cart-2-line text-2xl text-black"></i></a></li>
+                            <li><a href='#'><i class="fa-regular fa-user text-xl mx-2 text-black"></i></a></li>
                             <li><a href='#' className='absolute zero-1'>0</a></li>
-                            <li><a href='#'><i class="fa-regular fa-heart text-xl"></i></a></li>
+                            <li><a href='#'><i class="fa-regular fa-heart text-xl text-black -mx-11"></i></a></li>
                         </ul>
                             </ul>
                         </nav>

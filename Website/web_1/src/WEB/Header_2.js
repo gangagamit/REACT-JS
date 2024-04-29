@@ -3,7 +3,7 @@ import Categories from './Categories'
 
 function Header_2() {
     return (
-        <div className=' container flex justify-between items-center '>
+        <div className=' container mx-auto flex justify-between items-center '>
             {/* <div className=' flex justify-between items-center'> */}
 
             <div className='part-1'>
@@ -19,7 +19,7 @@ function Header_2() {
                                 <a href='#'>
                                     <p className=' hover:text-pink-500 font-semibold text-sm'>Home <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
                                 </a>
-                                <div className='homelist'>
+                                <div className='homelist z-10'>
                                     <li><a href='#' className=' hover:text-pink-500'>Wooden Home</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Fashion Home</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Furniture Home</a></li>
@@ -31,7 +31,7 @@ function Header_2() {
                                 <a href='#'>
                                     <p className='font-semibold text-sm'>Shop <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
                                 </a>
-                                <div className='homelist'>
+                                <div className='homelist z-10'>
                                     <li><a href='#' className=' hover:text-pink-500'>Shop</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Shop2</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Shop Details</a></li>
@@ -48,7 +48,7 @@ function Header_2() {
                                 <a href='#'>
                                     <p className=' hover:text-pink-500 font-semibold text-sm'>Pages <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
                                 </a>
-                                <div className='homelist'>
+                                <div className='homelist z-10'>
 
 
                                     <li><a href='#' className=' font-semibold text-sm hover:text-pink-500'>page Layout</a></li>
@@ -64,7 +64,7 @@ function Header_2() {
                                 <a href='#'>
                                     <p className='hover:text-pink-500 font-semibold text-sm'>Blogs <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
                                 </a>
-                                <div className='homelist'>
+                                <div className='homelist z-10'>
                                     <li><a href='#' className='hover:text-pink-500'>Blog</a></li>
                                     <li><a href='#' className='hover:text-pink-500'>Blog Details</a></li>
                                 </div>

@@ -1,0 +1,26 @@
+.checklist-bg{
+    width: 100%;
+    height: 200px;
+    background-image: url('../../Image/shop-1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.hr-3{
+    height: 2px;
+    width: 30px;
+    background-color: rgb(194, 189, 189);
+}
+.customer{
+    height: 35px;
+    background-color: rgb(207, 204, 204);
+    border-top: 1px solid rgb(181, 4, 4);
+    border-left: 1px solid rgb(207, 204, 204);
+    border-right: 1px solid rgb(207, 204, 204);
+    border-bottom: 1px solid rgb(207, 204, 204);
+}
+.Your-order
+{
+    height: fit-content;
+    width: 500px;
+    border: 1px solid red;
+}

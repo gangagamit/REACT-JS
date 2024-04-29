@@ -2,8 +2,8 @@ import React from 'react'
 import img1 from '../Image/floded-01.png';
 function Pots() {
     return (
-        <div className='main bg-slate-50 p-3'>
-            <div className=' container bg-slate-100 grid lg:grid-cols-2  md: grid-cols-1 items-center p-5'>
+        <div className='main container mx-auto  bg-slate-50 p-3'>
+            <div className='  bg-slate-100 grid lg:grid-cols-2  md: grid-cols-1 items-center p-5'>
                 <div>
                     <img src={img1} alt='image'></img>
                 </div>

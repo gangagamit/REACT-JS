@@ -5,7 +5,7 @@ import img3 from '../Image/f-app.jpg'
 import img4 from '../Image/f-brand-icon-01.png'
 function Footer() {
   return (
-    <div className=' container mt-5 p-3'>
+    <div className=' container mx-auto mt-5 p-3'>
        <div className='p-4 bg-gray-100'> 
         {/* footer-1 start */} 
       <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  border-1 p-3  '> 

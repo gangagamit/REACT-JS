@@ -7,7 +7,7 @@ import img5 from '../Image/cat05.svg';
 import img6 from '../Image/cat06.svg';
 function TopCateg() {
   return (
-    <div className='p-3'>
+    <div className='p-3 container mx-auto mt-8'>
       <section className=' bg-slate-50'>
                 <h1 className=' p-3 font-bold text-2xl text-start'>Top <span className=' text-pink-700 text-3xl underline'>Categories</span></h1>
             <div>

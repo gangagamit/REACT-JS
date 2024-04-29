@@ -1,0 +1,28 @@
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+.shop{
+    width: 100%;
+    height: 180px;
+    background-image: url('../../Image/shop-1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.shop img{
+    height: 100%;
+    width: 100%;
+}
+.shop .hr{
+    height: 2px;
+    width: 40px;
+    background-color:rgb(194, 194, 194);
+}
+/* .card-1:hover{
+        height: 200px;
+        width: 400px;
+        border: 2px solid red;
+        box-shadow: 5px 0px 15px rgba(0,0, 0, 0.5);
+
+} */

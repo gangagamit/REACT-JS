@@ -1,0 +1,12 @@
+.cart-bg{
+    height: 200px;
+    width: 100%;
+    background-image: url('../../Image/shop-1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.hr-5{
+    height: 2px;
+    width: 30px;
+    background-color: rgb(194, 189, 189);
+}
