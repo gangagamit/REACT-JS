@@ -24,28 +24,18 @@ function Cart() {
                         <table>
                             <thead>
                                 <tr>
-                                    <th className='border-collapse border border-slate-400 p-3 '>Images</th>
-                                    < th className='border-collapse border border-slate-400  p-3'>Courses</th>
-                                    <th className='border-collapse border border-slate-400  p-3 '>Unit Price</th>
-                                    <th className='border-collapse border border-slate-400   p-3'>Quantity</th>
-                                    <th className='border-collapse border border-slate-400  p-3'>Total</th>
-                                    <th className='border-collapse border border-slate-400   p-3'>Add To Cart</th>
-                                    <th className='border-collapse border border-slate-400  p-3'>Remove</th>
+                                    <th className='border-collapse border border-slate-400 p-3 w-40'>Images</th>
+                                    < th className='border-collapse border border-slate-400 p-3 w-40'>Courses</th>
+                                    <th className='border-collapse border border-slate-400  p-3 w-40'>Unit Price</th>
+                                    <th className='border-collapse border border-slate-400   p-3 w-40'>Quantity</th>
+                                    <th className='border-collapse border border-slate-400  p-3 w-40'>Total</th>
+                                    <th className='border-collapse border border-slate-400  p-3 w-40'>Remove</th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
                         </table>
                     </div>
-                </div>
-                <div className='coupon-code'>
-                    <div className='flex'>
-                        <div className=' bg-slate-100'>
-                            <input type='text' placeholder='Coupon code' className='outline-none h-16 w-24 rounded-full bg-slate-100'/>
-                        </div>
-                        <div>
-                            adsd
-                        </div>
-                    </div>
+                 
                 </div>
             </div>{/* conatiner*/}
         </div>

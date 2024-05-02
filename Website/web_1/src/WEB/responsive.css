@@ -1,0 +1,41 @@
+@media (max-width:576px){
+    .container{
+        height: 100%;
+        width: 100%;  
+    }
+    .h-btn{
+        display: block;
+    }
+    .logo-niimg{
+        display: block;
+    }
+    .logo-ni{
+        width: 100%;
+        height: 100%;
+    }
+    .logo-input{
+        display: none;
+    }
+}
+@media(max-width:768px){
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+    .h-btn{
+        display:none;
+    }
+    .logo-niimg{
+        display: block;
+    }
+}
+@media(max-width:992px){
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .logo-niimg{
+        display: block;
+    }
+}

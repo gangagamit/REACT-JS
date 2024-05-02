@@ -1,5 +1,6 @@
 import React from 'react';
-import Categories from './Categories'
+import Categories from '../Categoriess/Categories';
+import { Link } from 'react-router-dom';
 
 function Header_2() {
     return (
@@ -16,11 +17,11 @@ function Header_2() {
 
                         <ul>
                             <li>
-                                <a href='#'>
+                                <Link  to='/'>
                                     <p className=' hover:text-pink-500 font-semibold text-sm'>Home <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
-                                </a>
+                                </Link>
                                 <div className='homelist z-10'>
-                                    <li><a href='#' className=' hover:text-pink-500'>Wooden Home</a></li>
+                                    <li><Link to="/" className=' hover:text-pink-500'>Wooden Home</Link></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Fashion Home</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Furniture Home</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Cosmetics Home</a></li>
@@ -28,9 +29,9 @@ function Header_2() {
                                 </div>
                             </li>
                             <li>
-                                <a href='#'>
+                                <Link to='/shop'>
                                     <p className='font-semibold text-sm'>Shop <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
-                                </a>
+                                </Link>
                                 <div className='homelist z-10'>
                                     <li><a href='#' className=' hover:text-pink-500'>Shop</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Shop2</a></li>
@@ -45,9 +46,9 @@ function Header_2() {
                                 </div>
                             </li>
                             <li>
-                                <a href='#'>
+                                <Link to='#'>
                                     <p className=' hover:text-pink-500 font-semibold text-sm'>Pages <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
-                                </a>
+                                </Link>
                                 <div className='homelist z-10'>
 
 
@@ -61,15 +62,15 @@ function Header_2() {
                                 </div>
                             </li>
                             <li>
-                                <a href='#'>
+                                <Link  to='/blog'>
                                     <p className='hover:text-pink-500 font-semibold text-sm'>Blogs <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
-                                </a>
+                                </Link>
                                 <div className='homelist z-10'>
                                     <li><a href='#' className='hover:text-pink-500'>Blog</a></li>
                                     <li><a href='#' className='hover:text-pink-500'>Blog Details</a></li>
                                 </div>
                             </li>
-                            <li><a href='#' className='hover:text-pink-500 font-semibold text-sm'>Contact</a></li>
+                            <li><Link to='/contact' className='hover:text-pink-500 font-semibold text-sm'>Contact</Link></li>
                         </ul>
                     </nav>
                 </div>

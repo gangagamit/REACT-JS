@@ -12,7 +12,7 @@ import img9 from '../../Image/product-17.jpg';
 import img10 from '../../Image/product-19.jpg';
 function Shop() {
     return (
-        <div className='container'>
+        <div>
             <div className='shop p-5'>
                 <div className='flex'>
                     <div>

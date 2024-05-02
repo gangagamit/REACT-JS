@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from '../Image/floded-01.png';
+import img1 from '../../Image/floded-01.png';
 function Pots() {
     return (
         <div className='main container mx-auto  bg-slate-50 p-3'>

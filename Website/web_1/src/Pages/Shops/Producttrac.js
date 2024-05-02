@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Shops/Track.css';
-import Footer from '../../WEB/Footer';
+import Footer from '../../WEB/Footeer/Footer';
 import img1 from '../../Image/track-bg.jpg';
 function Producttrac() {
   return (

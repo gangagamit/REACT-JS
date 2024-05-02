@@ -1,10 +1,9 @@
 import React from 'react'
-import '../Shops/Signstyle.css';
-import img1 from '../../Image/login-bg.jpg';
-import img2 from '../../Image/sign-bg.jpg';
-
-function Signin() {
-    return (
+import img1 from '../../../Image/login-bg.jpg';
+import img2 from '../../../Image/sign-bg.jpg';
+function Signpage() {
+  return (
+    <div>
         <div>
             {/* bg-img*/}
             <div className='sign-bg p-3'>
@@ -24,7 +23,7 @@ function Signin() {
             <div className='flex justify-center items-center'>
                 <div className='lg:grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-5'>
                     <div className='signpart-1 '>
-                        <div className='max-w-lg shadow rounded-lg bg-slate-100'>
+                        <div className='max-w-lg shadow rounded bg-slate-100'>
                             <img src={img1} alt='image' />
                             <div className='p-2'>
                             <div className='login-content flex bg-slate-100 '>
@@ -84,8 +83,8 @@ function Signin() {
                                 </div>
                             </div>
                             {/* form start */}
-                            <div className='p-3'>
-                                <form>
+                            <div className='p-2'>
+                                <form className='p-3'>
                                     <div className='bg-white h-16 w-full   rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-regular fa-envelope"></i></span>
@@ -117,8 +116,8 @@ function Signin() {
                 </div>   {/* grid close */}
                     
             </div>
-        
-    )
+    </div>
+  )
 }
 
-export default Signin
+export default Signpage

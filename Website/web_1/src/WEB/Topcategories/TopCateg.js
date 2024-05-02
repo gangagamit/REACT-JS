@@ -1,10 +1,10 @@
 import React from 'react'
-import img1 from '../Image/cat01.svg';
-import img2 from '../Image/cat02.svg';
-import img3 from '../Image/cat03.svg';
-import img4 from '../Image/cat04.svg';
-import img5 from '../Image/cat05.svg';
-import img6 from '../Image/cat06.svg';
+import img1 from '../../Image/cat01.svg';
+import img2 from '../../Image/cat02.svg';
+import img3 from '../../Image/cat03.svg';
+import img4 from '../../Image/cat04.svg';
+import img5 from '../../Image/cat05.svg';
+
 function TopCateg() {
   return (
     <div className='p-3 container mx-auto mt-8'>
@@ -62,14 +62,14 @@ function TopCateg() {
 
                             </pre>Amplifiers
                     </div>
-                    <div className='div-6 text-center'>
+                    {/* <div className='div-6 text-center'>
                       <p>05</p>
                     <div className='p-3 rounded-full bg-slate-100 h-48 flex justify-center items-center'>
                              <img src={img6} alt='image' className='p-5'></img>
                               </div>                    
                             <pre className=' font-sans'>Driftwood
                             </pre>Table Decor
-                    </div>
+                    </div> */}
                 </div>
             </div>
       </section>

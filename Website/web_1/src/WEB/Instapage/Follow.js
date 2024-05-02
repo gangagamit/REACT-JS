@@ -1,9 +1,9 @@
-import React from 'react'
-import img1 from '../Image/instagram-01.jpg';
-import img2 from '../Image/instagram-02.jpg';
-import img3 from '../Image/instagram-03.jpg';
-import img4 from '../Image/instagram-04.jpg';
-import img5 from '../Image/instagram-05.jpg';
+import React from 'react';
+import img1 from '../../Image/instagram-01.jpg';
+import img2 from '../../Image/instagram-02.jpg';
+import img3 from '../../Image/instagram-03.jpg';
+import img4 from '../../Image/instagram-04.jpg';
+import img5 from '../../Image/instagram-05.jpg';
 function Follow() {
   return (
     <div className='mt-5 p-3  container mx-auto'>

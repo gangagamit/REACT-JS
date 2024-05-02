@@ -1,7 +1,7 @@
 import React from 'react'
 
 import '../Shops/Wishstyle.css';
-import Footer from '../../WEB/Footer';
+import Footer from '../../WEB/Footeer/Footer';
 function Wishlist() {
   return (
     <div className=' container'>

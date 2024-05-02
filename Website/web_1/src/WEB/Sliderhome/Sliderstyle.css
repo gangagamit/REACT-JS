@@ -42,10 +42,10 @@
 }
  .bg-1{
   height:400px;
-  width:94%;
-  background-image: url('../src/Image/banner-1.jpg');
+  width:100%;
+  background-image: url('../../Image/banner-1.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:cover;
   border-top-left-radius:15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -53,10 +53,10 @@
  }
  .bg-2{
   height:400px;
-  width:94%;
-  background-image: url('../src/Image/banner-2.jpg');
+  width:100%;
+  background-image: url('../../Image/banner-2.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   border-top-left-radius:15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -64,10 +64,10 @@
  }
  .bg-3{
   height:400px;
-  width:94%;
-  background-image: url('../src/Image/banner-3.jpg');
+  width:100%;
+  background-image: url('../../Image/banner-3.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   border-top-left-radius:15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -78,7 +78,7 @@
   border-radius: 10px; 
   height: 190px;
   width: 400px;
-  background-image: url('../src/Image/banner-slider-01.jpg'); 
+  background-image: url('../../Image/banner-slider-01.jpg'); 
   background-repeat: no-repeat; 
   background-size: contain; 
 }  
@@ -88,7 +88,7 @@
   height: 190px;
   width: 400px;
   margin-top: 10px;
-  background-image: url('../src/Image/banner-slider-02.jpg'); 
+  background-image: url('../../Image/banner-slider-02.jpg'); 
   background-repeat: no-repeat; 
   background-size:contain; 
 } 

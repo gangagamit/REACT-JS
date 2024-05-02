@@ -8,15 +8,14 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import '../Sliderstyle.css';
+import '../../WEB/Sliderhome/Sliderstyle.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import img1 from '../Image/banner-1.jpg';
-import img2 from '../Image/banner-2.jpg';
-import img3 from '../Image/banner-3.jpg';
-
-import '../../src/Sliderstyle.css';
+// import img1 from '../Image/banner-1.jpg';
+// import img2 from '../Image/banner-2.jpg';
+// import img3 from '../Image/banner-3.jpg';
+import '../Sliderhome/Sliderstyle.css';
 const Home = () => {
   return (
     <>
@@ -25,7 +24,7 @@ const Home = () => {
           <div>
 
             <div className='slider-bg'>
-              <div className='slider_container justify-evenly'>
+              <div className='slider_container gap-5'>
                 <Swiper
                   spaceBetween={30}
                   centeredSlides={true}
