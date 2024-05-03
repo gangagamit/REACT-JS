@@ -1,0 +1,8 @@
+.page-bg{
+    height: 156px;
+    width: 100%;
+    /* background-color: red; */
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url('../../Image//shop-1.jpg');
+}

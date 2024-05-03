@@ -51,7 +51,7 @@ const PopularProduct = () => {
                                 <a href="#" className='burdges relative inline-block'>
                                     <img src={img1} alt="" />
                                     <img className='Burges' src={img2} alt="" />
-                                    <div className='icon'>
+                                    <div className='iconn-1'>
                                         <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>

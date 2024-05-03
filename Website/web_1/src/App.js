@@ -27,7 +27,11 @@ import './WEB/Product/Product.css';
 import Firstpage from './WEB/Home1/Firstpage';
 import Woodenpage from './Pages/Woodenhome/Woodenpage';
 import Signpage from './Pages/Page/Signin/Signpage';
+import SHopfilter from './Pages/Page/FIlter_1/SHopfilter';
+import Filterv_2 from './Pages/Page/V2/Filterv_2';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Page from './WEB/HPage/Page';
+import Blog1 from './WEB/Blogs/Blog1';
 function App() {
   return (
    
@@ -37,20 +41,22 @@ function App() {
             <Welcome/>
             <Header/>
             <Header_2/>
+             {/* <SHopfilter/> */}
+            {/* <Filterv_2/> */}
           <Routes>
-              {/* <Route path='/' element={<Firstpage/>}/>
-                  <Route path='/' element={<Woodenpage/>}/>  
-              <Route path='/shop' element={<Shop/>}/>  */}
-              {/* <Route path='/pages' element={<Pages/>}/>
-              <Route path='/blog' element={<Blog/>}/> */}
-               <Route path='/contact' element={<Contact/>}/>
-              {/* <Route path='*' element={<Navigaionerr/>}/> */}
+              <Route path='/' element={<Firstpage/>}/>
+                   <Route path='/woodenpage' element={<Woodenpage/>}/>  
+              <Route path='/shop' element={<Shop/>}/> 
+              <Route path='/page' element={<Page/>}/>
+               <Route path='/blog' element={<Blog1/>}/> 
+               {/* <Route path='/contact' element={<Contact/>}/>  */}
+               {/* <Route path='*' element={<Navigaionerr/>}/> */}
           </Routes>
        </BrowserRouter>
        {/* <Cart/> */}
               {/* <Signin/> */}
-              <Signpage/>
-       <Footer/>
+              {/* <Signpage/> */}
+        <Footer/> 
     </div>
     
   );
