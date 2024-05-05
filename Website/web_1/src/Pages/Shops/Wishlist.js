@@ -2,6 +2,7 @@ import React from 'react'
 
 import '../Shops/Wishstyle.css';
 import Footer from '../../WEB/Footeer/Footer';
+import { Link } from 'react-router-dom';
 function Wishlist() {
   return (
     <div className=' container'>
@@ -10,7 +11,7 @@ function Wishlist() {
             <div className='wishlist-bg p-3'>
                 <div className=' flex'>
                     <div>
-                        <p>Home</p>
+                        <Link to='/'>Home</Link>
                     </div>
                     <div className='hr-2 mt-3'></div>
                     <div>

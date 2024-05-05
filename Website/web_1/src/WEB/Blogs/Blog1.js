@@ -2,6 +2,7 @@ import React from 'react'
 import img1 from '../../Image/blog-in-01.jpg';
 import img2 from '../../Image/blog-in-02.jpg';
 import img3 from '../../Image/blog-in-03.jpg';
+import { Link } from 'react-router-dom';
 function Blog1() {
     return (
         <div>
@@ -9,7 +10,7 @@ function Blog1() {
             <div className='page-bg p-3'>
                 <div className=' flex'>
                     <div>
-                        <p>Home</p>
+                        <Link to='/'>Home</Link>
                     </div>
                     <div className=" border-b-2 border-slate-500 h-4 w-10"></div>
                     <div >
@@ -22,7 +23,7 @@ function Blog1() {
             </div> {/* bg-img*/}
             <div className='flex justify-center'>
                 <div className=' container'>
-                    <div className='grid lg:grid-cols-5 md: grid-cols-1 gap-3 mt-5'>
+                    <div className='grid lg:grid-cols-5 md: grid-cols-1 gap-10 mt-5'>
                         <div className=' col-span-3'>
                             <img src={img1} alt='image' className=' rounded-md' />
                             <div className='flex gap-10 mt-5'>
@@ -287,14 +288,64 @@ function Blog1() {
                                     </div>
                                 </div>
                             </div>{/* third box close */}
+                            <div className='mt-8 p-3 border-[1px] h-80 w-80  border-slate-200 rounded shadow'>
+                              
+                                    <h1 className='text-2xl font-medium'>Popular Tag</h1>
+                                    <div className='blog-popular flex justify-center items-center'>
+                                        <ul>
+                                            <div className='flex gap-3 mt-3'>
 
+                                                <li className='h-8 w-24 border-[1px] border-slate-200 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white'><a href='#'>FARNITURE</a></li>
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white'><a href='#'>TABLE</a></li>
+                                            </div>
+
+                                            <div className='flex gap-3 mt-3'>
+
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white '><a href='#'>CHAIR</a></li>
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white'><a href='#'>CLOTHS</a></li>
+                                            </div>
+                                            <div className='flex gap-3 mt-3'>
+
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white'><a href='#'>TOY</a></li>
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium'><a href='#'>SUITE</a></li>
+                                            </div>
+                                            <div className='flex gap-3 mt-3'>
+
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white'><a href='#'>T-SHIRT</a></li>
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white'><a href='#'>DRESS</a></li>
+                                            </div>
+                                            <div className='flex gap-3 mt-3'>
+
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white'><a href='#'>WOODEN</a></li>
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white'><a href='#'>CLOCK</a></li>
+                                            </div>
+                                            <div className='flex gap-3 mt-3'>
+
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white'><a href='#'>CRAFT</a></li>
+                                                <li className='h-8 w-24 border-[1px] border-slate-200
+                                                 flex items-center text-slate-400 text-sm font-medium hover:bg-red-600 hover:text-white'><a href='#'>GIFT</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                               
+                            </div>
+                            </div>
+                            {/* grid-part-2 close*/}
                         </div>
-                        {/* grid-part-2 close*/}
                     </div>
                 </div>
             </div>
-        </div>
-    )
+            )
 }
 
-export default Blog1
+            export default Blog1

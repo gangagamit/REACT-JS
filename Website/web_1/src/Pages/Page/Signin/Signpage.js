@@ -1,7 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img1 from '../../../Image/login-bg.jpg';
 import img2 from '../../../Image/sign-bg.jpg';
+// import { useNavigate } from 'react-router-dom';
 function Signpage() {
+    // const navigate = useNavigate();
+    const [email,setEmail] = useState("");
+    const [password,setPassword]= useState("");
+
+    const getEmail = localStorage.getItem("Email");
+    const getPassword= localStorage.getItem("Password");
+
+    function onSubmitFun (e){
+        e.preventDefault();
+        if(!email && !password){
+            alert("please fill all detail")
+        }
+        else{
+            alert("succesfully register");
+            localStorage.setItem("Email",email);
+            localStorage.setItem("password",password);
+            // navigate("/");
+        }
+    }
   return (
     <div>
         <div>
@@ -21,10 +41,10 @@ function Signpage() {
                 </div>
             </div> {/* bg-img*/}
             <div className='flex justify-center items-center'>
-                <div className='lg:grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-5'>
-                    <div className='signpart-1 '>
-                        <div className='max-w-lg shadow rounded bg-slate-100'>
-                            <img src={img1} alt='image' />
+                <div className='lg:grid lg:grid-cols-8 md:grid-cols-2 sm:grid-cols-1 gap-5'>
+                    <div className='signpart-1 col-span-4 rounded'>
+                        <div className='max-w-lg shadow  bg-slate-100'>
+                            <img src={img1} alt='image' className=' rounded'/>
                             <div className='p-2'>
                             <div className='login-content flex bg-slate-100 '>
                                 <div className=' p-2 mt-2 rounded sign-icon flex justify-center items-center h-10 w-10 bg-white'>
@@ -68,10 +88,10 @@ function Signpage() {
                             </div>
                         </div>{/* card close */}
                     </div>{/* signpart-1 close */}
-                    <div className='singpart-2'>
+                    <div className='singpart-2 col-span-4 rounded'>
                         
-                    <div className='max-w-lg shadow rounded-lg bg-slate-100'>
-                            <img src={img2} alt='image' />
+                    <div className='max-w-lg shadow rounded bg-slate-100'>
+                            <img src={img2} alt='image' className=' rounded'/>
                             <div className='login-content flex bg-slate-100'>
                                 <div className=' p-2 mt-2 rounded sign-icon flex justify-center items-center h-10 w-10 bg-white'>
                                 <i class="ri-folder-user-fill text-2xl text-red-400"></i>
@@ -84,16 +104,16 @@ function Signpage() {
                             </div>
                             {/* form start */}
                             <div className='p-2'>
-                                <form className='p-3'>
+                                <form  onSubmit={onSubmitFun}  className=' p-3'>
                                     <div className='bg-white h-16 w-full   rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-regular fa-envelope"></i></span>
-                                        <input placeholder='Email address' type='email' className=' outline-none' />
+                                        <input onChange={(e)=>setEmail(e.target.value)}  type='email' placeholder='Email address' className=' outline-none' />
                                     </div>
                                     <div className='bg-white h-16 w-full mt-5  rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-solid fa-key"></i></span>
-                                        <input placeholder='Password' type='email' className=' outline-none' />
+                                        <input onChange={(e)=>setPassword(e.target.value)} placeholder='Password' type='email' className=' outline-none' />
                                     </div>
                                 </form>
                                 <div className='checbox flex justify-between items-center p-2'>
@@ -104,7 +124,7 @@ function Signpage() {
                                     
                                 </div>
                                 <div className=' bg-gray-200 hover:bg-black  rounded h-14 flex justify-center items-center p-2'>
-                                    <button className='text-black text-lg  hover:text-white font-semibold outline-none border-0'>Register Now
+                                    <button type='submit' className='text-black text-lg  hover:text-white font-semibold outline-none border-0'>Register Now
                                         <i class="fa-solid fa-arrow-right mx-2"></i>
                                     </button>
                                 </div>

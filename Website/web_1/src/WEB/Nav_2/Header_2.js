@@ -41,7 +41,7 @@ function Header_2() {
                                     <li><a href='#' className=' hover:text-pink-500'>Cart</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Sign In</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Checkout</a></li>
-                                    <li><a href='#' className=' hover:text-pink-500'>Wishlist</a></li>
+                                    <li><Link to='/wishlist' className=' hover:text-pink-500'>Wishlist</Link></li>
                                     <li><a href='#' className=' hover:text-pink-500'>product track</a></li>
                                 </div>
                             </li>
