@@ -44,19 +44,19 @@ function App() {
              {/* <SHopfilter/> */}
             {/* <Filterv_2/> */}
           <Routes>
-              {/* <Route path='/' element={<Firstpage/>}/> */}
-                   {/* <Route path='/woodenpage' element={<Woodenpage/>}/>  
+              <Route path='/' element={<Firstpage/>}/>
+                   <Route path='/woodenpage' element={<Woodenpage/>}/>  
               <Route path='/shop' element={<Shop/>}/> 
               <Route path='/page' element={<Page/>}/>
                <Route path='/blog' element={<Blog1/>}/> 
                <Route path='/wishlist' element={<Wishlist/>}/>
-                <Route path='/contact' element={<Contact/>}/>   */}
+                <Route path='/contact' element={<Contact/>}/>  
                {/* <Route path='*' element={<Navigaionerr/>}/> */}
           </Routes>
        </BrowserRouter>
        {/* <Cart/> */}
               {/* <Signin/> */}
-             <Signpage/> 
+             {/* <Signpage/>  */}
         <Footer/> 
     </div>
     

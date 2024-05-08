@@ -17,7 +17,7 @@ function Header_2() {
 
                         <ul>
                             <li>
-                                <Link  to='/'>
+                                <Link to='/'>
                                     <p className=' hover:text-pink-500 font-semibold text-sm'>Home <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
                                 </Link>
                                 <div className='homelist z-10'>
@@ -49,20 +49,44 @@ function Header_2() {
                                 <Link to='/page'>
                                     <p className=' hover:text-pink-500 font-semibold text-sm'>Pages <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
                                 </Link>
-                                <div className='homelist z-10'>
+                                <div className='homelistp z-10 '>
 
+                                    <ul className='page-ul flex w-[530px] h-80 bg-white border-t-2 border-t-red-600'>
+                                        <ul>
 
-                                    <li><a href='#' className=' font-semibold text-sm hover:text-pink-500'>page Layout</a></li>
-                                    <li><Link to='v1' className=' hover:text-pink-500'>Shop Filters V1</Link></li>
-                                    <li><a href='#' className=' hover:text-pink-500'>Shop Filters V1</a></li>
-                                    <li><a href='#' className=' hover:text-pink-500'>Shop Shidebar</a></li>
-                                    <li><a href='#' className=' hover:text-pink-500'>Shop Right Shidebar</a></li>
-                                    <li><a href='#' className=' hover:text-pink-500'>Shop list view</a></li>
+                                            <li><a href='#' className=' font-semibold text-sm hover:text-pink-500'>page Layout</a></li>
+                                            <li><Link to='v1' className=' hover:text-pink-500'>Shop Filters V1</Link></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>Shop Filters V2</a></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>Shop Shidebar</a></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>Shop Right Shidebar</a></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>Shop list view</a></li>
+                                        </ul>
+
+                                        <ul>
+
+                                            <li><a href='#' className=' font-semibold text-sm hover:text-pink-500'>page Layout</a></li>
+                                            <li><Link to='v1' className=' hover:text-pink-500'>About</Link></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>Cart</a></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>Checkout</a></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>Sign In</a></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>Log In</a></li>
+                                        </ul>
+
+                                        <ul>
+
+                                            <li><a href='#' className=' font-semibold text-sm hover:text-pink-500'>page Layout</a></li>
+                                            <li><Link to='v1' className=' hover:text-pink-500'>Product Track</Link></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>Wishlist</a></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>404/Error</a></li>
+                                            <li><a href='#' className=' hover:text-pink-500'>Coming Soon</a></li>
+                                           
+                                        </ul>
+                                    </ul>
 
                                 </div>
                             </li>
                             <li>
-                                <Link  to='/blog'>
+                                <Link to='/blog'>
                                     <p className='hover:text-pink-500 font-semibold text-sm'>Blogs <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
                                 </Link>
                                 <div className='homelist z-10'>

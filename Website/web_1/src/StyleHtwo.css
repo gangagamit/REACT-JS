@@ -15,12 +15,36 @@
     
     height: fit-content;
 }
+
+.homelistp{
+    display: none;
+    position: absolute;
+    
+    top: 100%;
+    width: 180px;
+    outline: 1px solid white;
+    background-color: white;
+    padding: 10px;
+    font-weight: 400;
+    
+    height: fit-content;
+}
 ul li:hover .homelist{
     display: block;
     position: absolute;
     text-align: left;
     
 }
-ul li:hover .homelist{
+ul li:hover .homelistp{
+    display: block;
+}
+
+ul li:hover .homelistp{
+    display: block;
+    position: absolute;
+    text-align: left;
+    
+}
+ul li:hover .homelistp{
     display: block;
 }
