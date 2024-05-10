@@ -65,20 +65,20 @@ function Header_2() {
                                         <ul>
 
                                             <li><a href='#' className=' font-semibold text-sm hover:text-pink-500'>page Layout</a></li>
-                                            <li><Link to='v1' className=' hover:text-pink-500'>About</Link></li>
-                                            <li><a href='#' className=' hover:text-pink-500'>Cart</a></li>
-                                            <li><a href='#' className=' hover:text-pink-500'>Checkout</a></li>
-                                            <li><a href='#' className=' hover:text-pink-500'>Sign In</a></li>
-                                            <li><a href='#' className=' hover:text-pink-500'>Log In</a></li>
+                                            <li><Link to='v1' className=' hover:text-pink-500 font-semibold text-sm'>About</Link></li>
+                                            <li><Link to='/cart' className=' hover:text-pink-500'>Cart</Link></li>
+                                            <li><Link to='/checkout' className=' hover:text-pink-500'>Checkout</Link></li>
+                                            <li><Link to='/signpage' className=' hover:text-pink-500'>Sign In</Link></li>
+                                            <li><Link href='signpage' className=' hover:text-pink-500 font-semibold text-sm'>Log In</Link></li>
                                         </ul>
 
                                         <ul>
 
                                             <li><a href='#' className=' font-semibold text-sm hover:text-pink-500'>page Layout</a></li>
-                                            <li><Link to='v1' className=' hover:text-pink-500'>Product Track</Link></li>
-                                            <li><a href='#' className=' hover:text-pink-500'>Wishlist</a></li>
-                                            <li><a href='#' className=' hover:text-pink-500'>404/Error</a></li>
-                                            <li><a href='#' className=' hover:text-pink-500'>Coming Soon</a></li>
+                                            <li><Link to='v1' className=' hover:text-pink-500 font-semibold text-sm'>Product Track</Link></li>
+                                            <li><a href='#' className=' hover:text-pink-500 font-semibold text-sm'>Wishlist</a></li>
+                                            <li><a href='#' className=' hover:text-pink-500 font-semibold text-sm'>404/Error</a></li>
+                                            <li><a href='#' className=' hover:text-pink-500 font-semibold text-sm'>Coming Soon</a></li>
                                            
                                         </ul>
                                     </ul>
@@ -90,8 +90,8 @@ function Header_2() {
                                     <p className='hover:text-pink-500 font-semibold text-sm'>Blogs <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
                                 </Link>
                                 <div className='homelist z-10'>
-                                    <li><a href='#' className='hover:text-pink-500'>Blog</a></li>
-                                    <li><a href='#' className='hover:text-pink-500'>Blog Details</a></li>
+                                    <li><a href='#' className='hover:text-pink-500 font-semibold text-sm'>Blog</a></li>
+                                    <li><a href='#' className='hover:text-pink-500 font-semibold text-sm'>Blog Details</a></li>
                                 </div>
                             </li>
                             <li><Link to='/contact' className='hover:text-pink-500 font-semibold text-sm'>Contact</Link></li>

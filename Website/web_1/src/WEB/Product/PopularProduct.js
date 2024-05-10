@@ -51,7 +51,7 @@ const PopularProduct = () => {
                                 <a href="#" className='burdges relative inline-block'>
                                     <img src={img1} alt="" />
                                     <img className='Burges' src={img2} alt="" />
-                                    <div className='iconn-1'>
+                                    <div className='product-i'>
                                         <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>
@@ -87,7 +87,7 @@ const PopularProduct = () => {
                             <a href="#" className='burdges relative inline-block'>
                                 <img src={img3} alt="" />
                                 <img className='Burges' src={img4} alt="" />
-                                <div className='icon'>
+                                <div className='product-i'>
                                 <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>
@@ -123,7 +123,7 @@ const PopularProduct = () => {
                                 <a href="#" className='burdges relative inline-block'>
                                     <img src={img5} alt="" />
                                     <img className='Burges' src={img6} alt="" />
-                                    <div className='icon'>
+                                    <div className='product-i'>
                                     <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>
@@ -160,7 +160,7 @@ const PopularProduct = () => {
                                 <a href="#" className='burdges relative inline-block'>
                                     <img src={img7} alt="" />
                                     <img className='Burges' src={img8} alt="" />
-                                    <div className='icon'>
+                                    <div className='product-i'>
                                     <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>
@@ -201,7 +201,7 @@ const PopularProduct = () => {
                                 <a href="#" className='burdges relative inline-block'>
                                     <img src={img9} alt="" />
                                     <img className='Burges' src={img10} alt="" />
-                                    <div className='icon'>
+                                    <div className='product-i'>
                                     <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>
@@ -238,7 +238,7 @@ const PopularProduct = () => {
                                 <a href="#" className='burdges relative inline-block'>
                                     <img src={img11} alt="" />
                                     <img className='Burges' src={img12} alt="" />
-                                    <div className='icon'>
+                                    <div className='product-i'>
                                     <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>
@@ -275,7 +275,7 @@ const PopularProduct = () => {
                                 <a href="#" className='burdges relative inline-block'>
                                     <img src={img13} alt="" />
                                     <img className='Burges' src={img14} alt="" />
-                                    <div className='icon'>
+                                    <div className='product-i'>
                                     <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>
@@ -312,7 +312,7 @@ const PopularProduct = () => {
                                 <a href="#" className='burdges relative inline-block'>
                                     <img src={img15} alt="" />
                                     <img className='Burges' src={img16} alt="" />
-                                    <div className='icon'>
+                                    <div className='product-i'>
                                     <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>
@@ -353,7 +353,7 @@ const PopularProduct = () => {
                                 <a href="#" className='burdges relative inline-block'>
                                     <img src={img17} alt="" />
                                     <img className='Burges' src={img18} alt="" />
-                                    <div className='icon'>
+                                    <div className='product-i'>
                                     <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>
@@ -390,7 +390,7 @@ const PopularProduct = () => {
                                 <a href="#" className='burdges relative inline-block'>
                                     <img src={img19} alt="" />
                                     <img className='Burges' src={img20} alt="" />
-                                    <div className='iconn'>
+                                    <div className='product-i'>
                                         <a href="#"><i className="fa-solid fa-basket-shopping"></i></a>
                                         <a href="#"><i className="ri-arrow-left-right-line text-2xl"></i></a>
                                         <a href="#"><i class="ri-eye-line text-xl"></i></a>

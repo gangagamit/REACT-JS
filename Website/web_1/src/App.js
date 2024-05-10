@@ -1,6 +1,7 @@
 
 import './App.css';
-import Naverrorpage from '../src/Pages/Errorpage/Naverrorpage';
+import Navigaionerr from '../src/Pages/Errorpage/Naverrorpage';
+
 import Checkout from './Pages/Shops/Checkout';
 import Signin from './Pages/Shops/Signin';
 import Producttrac from './Pages/Shops/Producttrac';
@@ -21,7 +22,7 @@ import Shop from './Pages/Shops/Shop';
 import Wishlist from './Pages/Shops/Wishlist';
 import Homm from './WEB/Homm';
 import Cart from './Pages/Shops/Cart';
-import NavErroepaage from './Pages/Shops/NavErroepaage';
+
 import Contact from './Pages/Contact/Contact';
 import './WEB/Product/Product.css';
 import Firstpage from './WEB/Home1/Firstpage';
@@ -32,6 +33,8 @@ import Filterv_2 from './Pages/Page/V2/Filterv_2';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Page from './WEB/HPage/Page';
 import Blog1 from './WEB/Blogs/Blog1';
+import ProductMap from './WEB/Product/ProductMap';
+import ProductCard from './WEB/Product/ProductCard';
 function App() {
   return (
    
@@ -41,22 +44,25 @@ function App() {
             <Welcome/>
             <Header/>
             <Header_2/>
-             {/* <SHopfilter/> */}
+            {/* <SHopfilter/> */}
             {/* <Filterv_2/> */}
           <Routes>
               <Route path='/' element={<Firstpage/>}/>
-                   <Route path='/woodenpage' element={<Woodenpage/>}/>  
+              <Route path='/woodenpage' element={<Woodenpage/>}/>  
               <Route path='/shop' element={<Shop/>}/> 
               <Route path='/page' element={<Page/>}/>
-               <Route path='/blog' element={<Blog1/>}/> 
-               <Route path='/wishlist' element={<Wishlist/>}/>
-                <Route path='/contact' element={<Contact/>}/>  
-               {/* <Route path='*' element={<Navigaionerr/>}/> */}
+              <Route path='/blog' element={<Blog1/>}/> 
+              <Route path='/wishlist' element={<Wishlist/>}/>
+              <Route path='/contact' element={<Contact/>}/> 
+              <Route path='/signpage' element={<Signpage/>}/> 
+              <Route path='/cart' element={ <Cart/>}/>
+              <Route path='*' element={<Navigaionerr/>}/>
           </Routes>
-       </BrowserRouter>
-       {/* <Cart/> */}
-              {/* <Signin/> */}
-             {/* <Signpage/>  */}
+       </BrowserRouter> 
+       
+             {/* <Signin/> */}
+            {/* <ProductMap/> */}
+            {/* <ProductCard/> */}
         <Footer/> 
     </div>
     

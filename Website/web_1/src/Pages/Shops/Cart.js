@@ -25,7 +25,7 @@ function Cart() {
                             <thead>
                                 <tr>
                                     <th className='border-collapse border border-slate-400 p-3 w-40'>Images</th>
-                                    < th className='border-collapse border border-slate-400 p-3 w-40'>Courses</th>
+                                    <th className='border-collapse border border-slate-400 p-3 w-40'>Courses</th>
                                     <th className='border-collapse border border-slate-400  p-3 w-40'>Unit Price</th>
                                     <th className='border-collapse border border-slate-400   p-3 w-40'>Quantity</th>
                                     <th className='border-collapse border border-slate-400  p-3 w-40'>Total</th>

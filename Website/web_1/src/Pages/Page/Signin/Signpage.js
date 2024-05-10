@@ -61,12 +61,12 @@ function Signpage() {
                                     <div className='bg-white h-16 w-full   rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-regular fa-user "></i></span>
-                                        <input placeholder='Username/email address' type='email' className=' outline-none' />
+                                        <input placeholder='Username/email address' type='text' className=' outline-none' />
                                     </div>
                                     <div className='bg-white h-16 w-full mt-5  rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-solid fa-key"></i></span>
-                                        <input placeholder='Password' type='email' className=' outline-none' />
+                                        <input placeholder='Password' type='text' className=' outline-none' />
                                     </div>
                                 </form>
                                 <div className='checbox flex justify-between items-center p-2'>
@@ -108,12 +108,12 @@ function Signpage() {
                                     <div className='bg-white h-16 w-full   rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-regular fa-envelope"></i></span>
-                                        <input onChange={(e)=>setEmail(e.target.value)}  type='email' placeholder='Email address' className=' outline-none' />
+                                        <input onChange={(e)=>setEmail(e.target.value)}  type='text' placeholder='Email address' className=' outline-none' />
                                     </div>
                                     <div className='bg-white h-16 w-full mt-5  rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-solid fa-key"></i></span>
-                                        <input onChange={(e)=>setPassword(e.target.value)} placeholder='Password' type='email' className=' outline-none' />
+                                        <input onChange={(e)=>setPassword(e.target.value)} placeholder='Password' type='text' name='text' className=' outline-none' />
                                     </div>
                                 </form>
                                 <div className='checbox flex justify-between items-center p-2'>

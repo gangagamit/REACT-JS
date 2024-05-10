@@ -1,8 +1,10 @@
 import React from 'react'
-import img1 from '../../Image/shop-1.jpg';
+import {useNavigate} from "react-router-dom";
+// import img1 from '../../Image/shop-1.jpg';
 import img2 from '../../Image/error.png';
 import '../Errorpage/errorresponsive.css';
 function Naverrorpage() {
+    const home = useNavigate();
   return (
     <div>
         <div>
@@ -33,7 +35,7 @@ function Naverrorpage() {
                 </div>
                 <div className='flex justify-center items-center mt-2'>
               
-                <button className='text-md font-semibold outline-none bg-red-500 text-white w-40 h-14'>   <i class="fa-solid fa-arrow-left"></i> Back to Home</button>
+                <button   onClick={()=> home("/")}  className='text-md font-semibold outline-none bg-red-500 text-white w-40 h-14'>   <i class="fa-solid fa-arrow-left"></i>  Back to Home</button>
                 </div>
             </div>
         </div>
