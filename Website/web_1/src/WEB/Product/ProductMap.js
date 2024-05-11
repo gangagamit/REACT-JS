@@ -15,6 +15,6 @@ function ProductMap() {
      </div>
     </div>
   )
-}
+} 
 
 export default ProductMap

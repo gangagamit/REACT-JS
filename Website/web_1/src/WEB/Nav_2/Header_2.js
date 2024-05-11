@@ -90,7 +90,7 @@ function Header_2() {
                                     <p className='hover:text-pink-500 font-semibold text-sm'>Blogs <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
                                 </Link>
                                 <div className='homelist z-10'>
-                                    <li><a href='#' className='hover:text-pink-500 font-semibold text-sm'>Blog</a></li>
+                                    <li><Link to='/page' className='hover:text-pink-500 font-semibold text-sm'>Blog</Link></li>
                                     <li><a href='#' className='hover:text-pink-500 font-semibold text-sm'>Blog Details</a></li>
                                 </div>
                             </li>

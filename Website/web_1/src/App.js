@@ -61,8 +61,8 @@ function App() {
        </BrowserRouter> 
        
              {/* <Signin/> */}
-            {/* <ProductMap/> */}
-            {/* <ProductCard/> */}
+            {/* <ProductMap/>
+            <ProductCard/> */}
         <Footer/> 
     </div>
     
