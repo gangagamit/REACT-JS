@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Shop2() {
   return (
@@ -6,7 +7,7 @@ function Shop2() {
            <div className='shop p-5'>
                 <div className='flex'>
                     <div>
-                        <h1>Home</h1>
+                        <Link to='/'>Home</Link>
                     </div>
                     <div className='hr mt-3'>
 

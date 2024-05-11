@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../Shops/Checkstyle.css';
+import { Link } from 'react-router-dom';
 function Checkout() {
     const [show, setShow] = useState(true);
     const [show1, setShow1] = useState(true);
@@ -11,7 +12,7 @@ function Checkout() {
                 <div className='checklist-bg p-3'>
                     <div className=' flex'>
                         <div>
-                            <p>Home</p>
+                            <Link to='/'>Home</Link>
                         </div>
                         <div className='hr-3 mt-3'></div>
                         <div>

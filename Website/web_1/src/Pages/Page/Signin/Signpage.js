@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import img1 from '../../../Image/login-bg.jpg';
 import img2 from '../../../Image/sign-bg.jpg';
+import { Link } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 function Signpage() {
     // const navigate = useNavigate();
@@ -29,7 +30,7 @@ function Signpage() {
             <div className='sign-bg p-3'>
                 <div className=' flex'>
                     <div>
-                        <p>Home</p>
+                        <Link to='/'>Home</Link>
                     </div>
                     <div className='hr-4 mt-3'></div>
                     <div>

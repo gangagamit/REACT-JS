@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../Shops/Cart.css';
 function Cart() {
     return (
@@ -7,7 +8,7 @@ function Cart() {
             <div className='cart-bg p-3'>
                 <div className=' flex'>
                     <div>
-                        <p>Home</p>
+                        <Link to='/'>Home</Link>
                     </div>
                     <div className='hr-5 mt-3'></div>
                     <div>

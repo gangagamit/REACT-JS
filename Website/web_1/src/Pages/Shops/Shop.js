@@ -10,13 +10,14 @@ import img7 from '../../Image/product-13.jpg';
 import img8 from '../../Image/product-15.jpg';
 import img9 from '../../Image/product-17.jpg';
 import img10 from '../../Image/product-19.jpg';
+import { Link } from 'react-router-dom';
 function Shop() {
     return (
         <div>
             <div className='shop p-5'>
                 <div className='flex'>
                     <div>
-                        <h1>Home</h1>
+                        <Link to='/'>Home</Link>
                     </div>
                     <div className='hr mt-3'>
 

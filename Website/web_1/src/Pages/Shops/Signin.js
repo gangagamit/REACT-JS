@@ -2,7 +2,7 @@ import React from 'react'
 import '../Shops/Signstyle.css';
 import img1 from '../../Image/login-bg.jpg';
 import img2 from '../../Image/sign-bg.jpg';
-
+import { Link } from 'react-router-dom';
 function Signin() {
     return (
         <div>
@@ -10,7 +10,7 @@ function Signin() {
             <div className='sign-bg p-3'>
                 <div className=' flex'>
                     <div>
-                        <p>Home</p>
+                        <Link to='/'>Home</Link>
                     </div>
                     <div className='hr-4 mt-3'></div>
                     <div>

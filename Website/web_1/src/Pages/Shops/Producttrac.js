@@ -2,6 +2,7 @@ import React from 'react'
 import '../Shops/Track.css';
 import Footer from '../../WEB/Footeer/Footer';
 import img1 from '../../Image/track-bg.jpg';
+import { Link } from 'react-router-dom';
 function Producttrac() {
   return (
     <div className='container mx-auto'>
@@ -10,7 +11,7 @@ function Producttrac() {
                         <div className='flex'>
 
                             <div>
-                                <p>Home</p>
+                                <Link to='/'>Home</Link>
                             </div>
                             <div className='hr mt-3'>
 
