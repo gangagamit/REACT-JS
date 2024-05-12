@@ -10,7 +10,6 @@ import './Style.css';
 import './HeaderStyle.css';
 import Header_2 from './WEB/Nav_2/Header_2';
 import './StyleHtwo.css';
-
 import Home from './WEB/Sliderhome/Home';
 import Footer from './WEB/Footeer/Footer';
 import TopCateg from './WEB/Topcategories/TopCateg';
@@ -35,11 +34,16 @@ import Page from './WEB/HPage/Page';
 import Blog1 from './WEB/Blogs/Blog1';
 import ProductMap from './WEB/Product/ProductMap';
 import ProductCard from './WEB/Product/ProductCard';
+import store from './Redux/Store/Store';
+import { Provider } from 'redux';
+import ProductData from './WEB/Product/ProductData';
+
 function App() {
   return (
    
   
     <div className="App">
+      <Provider store={store}>
        <BrowserRouter>
             <Welcome/>
             <Header/>
@@ -56,16 +60,16 @@ function App() {
               <Route path='/contact' element={<Contact/>}/> 
               <Route path='/signpage' element={<Signpage/>}/> 
               <Route path='/cart' element={ <Cart/>}/>
+              <Route path="/productCard/:id" element={<ProductCard/>}/>
               <Route path='*' element={<Navigaionerr/>}/>
           </Routes>
+           
        </BrowserRouter> 
-       
+      </Provider>
              {/* <Signin/> */}
-            {/* <ProductMap/>
-            <ProductCard/> */}
+            {/* <ProductMap/> */}
         <Footer/> 
     </div>
-    
   );
 }
 

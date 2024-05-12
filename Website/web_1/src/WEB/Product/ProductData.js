@@ -1,5 +1,5 @@
 import img1 from '../../Image/product-1.jpg';
-// import img2 from '../../Image/product-2.jpg';
+import img2 from '../../Image/product-2.jpg';
 import img3 from '../../Image/product-3.jpg';
 import img4 from '../../Image/product-4.jpg';
 import img5 from '../../Image/product-5.jpg';
@@ -21,55 +21,75 @@ import img20 from '../../Image/product-20.jpg';
 
 const ProductData = [
     {
-        img: img1,
+        img1: img1,
+        img2: img2,
         name : "Bradley Burgess 2",
-        price:"$20.00"
+        price:"$20.00",
+        id:"1"
     },
    
     {
-        img: img3,
+        img1: img3,
+        img2 : img4,
         name : "Allie Sharp",
-        price:"$30.00"
+        price:"$30.00",
+        id:"2"
     },
     {
-        img: img5,
+        img1: img5,
+        img2:img6,
         name : "Nathaniel Baldwin",
-        price:"$40.00"
+        price:"$40.00",
+        id:"3"
     },
     {
-        img: img7,
+        img1: img7,
+        img2: img8,
         name : "Effie Rios",
-        price:"$40.00"
+        price:"$40.00",
+        id:"4"
     },
     {
-        img: img9,
-        name : "Effie Rios",
-        price:"$40.00"
+        img1: img9,
+        img2: img10,
+        name : "Carolyn Goodwin",
+        price:"$50.00",
+        id:"5"
     },
     {
-        img: img11,
-        name : "Effie Rios",
-        price:"$40.00"
+        img1: img11,
+        img2: img12,
+        name : "Evelyn Patton",
+        price:"$60.00",
+        id:"6"
     },
     {
-        img: img13,
-        name : "Effie Rios",
-        price:"$40.00"
+        img1: img13,
+        img2: img14,
+        name : "Sally Ray",
+        price:"$70.00",
+        id:"7"
     },
     {
-        img: img15,
-        name : "Effie Rios",
-        price:"$40.00"
+        img1: img15,
+        img2: img16,
+        name : "Ora Bowman",
+        price:"$80.00",
+        id:"8"
     },
     {
-        img: img17,
+        img1: img17,
+        img2: img18,
         name : "Effie Rios",
-        price:"$40.00"
+        price:"$90.00",
+        id:"9"
     },
     {
-        img: img19,
-        name : "Effie Rios",
-        price:"$40.00"
+        img1: img19,
+        img2: img20,
+        name : "Terry Byrd",
+        price:"$100.00",
+        id:"10"
     },
 ]
 
