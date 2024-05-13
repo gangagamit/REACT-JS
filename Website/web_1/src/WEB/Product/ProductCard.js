@@ -1,64 +1,72 @@
 import React from 'react'
-// import Propsheading from '../Propsheading/Propsheading'
-import { FaStar } from "react-icons/fa6";
-import { CiHeart } from "react-icons/ci";
-// import Data from "../../Component/Second-part/Data"
-import { useParams } from 'react-router-dom';
 import ProductData from './ProductData';
-function ProductCard()   {
-    const{ id } = useParams();
-    // const product = ProductData[(id)];
-    const product = ProductData.find((item) => item.id === id);// Find product by ID
+import { Link } from 'react-router-dom';
+function ProductCard() {
     return (
-        <div>
-            <div>
-                {/* <Propsheading title="Shop Details" /> */}
+        <div className=' container mx-auto bg-white'>
+            <div className='product xl:flex justify-between sm:block md:block '>
+                <p className='text-2xl text-start font-bold'>popular   <span className='text-red-700'>Products</span></p>
+                <nav>
+                    <ul className='flex w-80 justify-between mr-7 font-bold '>
+                        <li className='text-red-700 font-bold'><a>ALL</a></li>
+                        <li><a>Popular</a></li>
+                        <li><a>On sale</a></li>
+                        <li><a>Best rated</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div className='p-20'>
-
-                <div className='grid grid-cols-1  md:grid-cols-5 gap-20'>
-                    <div className='col-span-2'>
-                         <img src={product.img1} alt="" /> 
-                      
-                    </div>
-                    <div className='col-span-3'>
-                        <div className='flex'>
-                            <div>
-                                <span className='bg-rose-200 text-sm font-bold text-rose-600 ps-2 pe-2'>Dress</span>
-                            </div>
-                            <div className='flex ps-5'>
-                                <div className='flex pt-1'>
-                                    <a href="#"><FaStar className='text-[#ffcd00]' /></a>
-                                    <a href="#"><FaStar className='text-[#ffcd00]' /></a>
-                                    <a href="#"><FaStar className='text-[#ffcd00]' /></a>
+            <div className='images-card'>
+                <div className='card-1 gap-10 rounded overflow-hidden grid xl:grid-cols-4 l:grid-cols-4 md:grid-cols-2 sm:grid-cols-1'>
+                    {ProductData.map((cvalue) => {
+                        return (<>
+                            <div className='shadow max-w-sm  overflow-hidden relative'>
+                                <div className='hover-1'>
+                                    <div className='bg-slate-200'>
+                                        <Link to={`product/${cvalue.id}`}><img src={cvalue.FirstImg} alt='image'/></Link>
+                                    </div>
+                                    <div className='btn h-10 w-48 bg-white rounded-md absolute top-20 left-8'>
+                                        <ul className='flex justify-evenly'>
+                                            <li className='text-2xl font-bold'><a href='#'><i class="fa-solid fa-basket-shopping"></i></a></li>
+                                            <li className='text-2xl font-bold'><a href='#'><i class="fa-solid fa-arrow-right-arrow-left"></i></a></li>
+                                            <li className='text-2xl font-bold'><a href='#'><i class="fa-solid fa-eye"></i></a></li>
+                                            <li className='text-2xl font-bold'><a href='#'><i class="fa-regular fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div className='text-start'>
+                                        <p className='hover:text-red-700'>{cvalue.name}</p>
+                                        <p className='font-bold'>{cvalue.price}</p>
+                                    </div>
+                                    <p>hello</p>
                                 </div>
-                                <a href="#"><span className='text-sm text-[#777] hover:text-rose-600 font-semibold ps-2'>10 Reviews</span></a>
+
+
+                                <div className='hover-2 absolute top-0 left-0 right-0 hover:opacity-10'>
+
+                                    <div className='bg-slate-200'>
+                                        {/* <Link to={`product/${cvalue.id}`}><img src={cvalue.FirstImg} alt='image'></img></Link> */}
+                                        <Link to={`product/${cvalue.id}`}><img src={cvalue.SecondeImg} alt='image'></img></Link>
+                                    </div>
+                                    <div className='text-start'>
+                                        <p className='hover:text-red-700'>{cvalue.name}</p>
+                                        <p className='font-bold'>{cvalue.price}</p>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+
                             </div>
-                        </div>
+                        </>)
+                    })}
 
-                        <div className='mt-2 flex items-center gap-3'>
-                            <h1 className='font-bold text-2xl'>{product.name}</h1>
-                            <span className='border text-xs text-rose-600 font-bold ps-2 pe-2 pt-1 pb-1'>In Stock</span>
-                        </div>
-                        <div className='flex items-center'>
-                            <h5 className='text-xl font-bold text-[#cfcfcf]'>$9.35</h5>
-                            <h1 className='text-rose-600 font-bold text-3xl ms-3'>{product.price}</h1>
-                        </div>
-                        <div>
-                            <p className='text-lg font-normal text-[#777]'>Priyoshop has brought to you the Hijab 3 Pieces Combo Pack PS23. It is acompletely modern design and you feel comfortable to put on this hijab.Buy it at the best price.</p>
-                        </div>
-
-                        <div className='flex flex-wrap mt-5 gap-5'>
-                            <input min="1" type="number" defaultValue="1" name="qty" className="border p-3 font-bold" />
-                            <button className='text-white bg-rose-600 hover:bg-black ps-10 pe-10 rounded-md'>Add To Cart</button>
-                            <button className='hover:text-white border hover:bg-rose-600 p-5 rounded-md '><CiHeart className='text-xl font-semibold'/></button>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
     )
 }
 
-export default ProductCard;
+export default ProductCard

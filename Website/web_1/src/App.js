@@ -13,7 +13,7 @@ import './StyleHtwo.css';
 import Home from './WEB/Sliderhome/Home';
 import Footer from './WEB/Footeer/Footer';
 import TopCateg from './WEB/Topcategories/TopCateg';
-import PopularProduct from './WEB/Product/PopularProduct';
+// import PopularProduct from './WEB/Product/PopularProduct';
 import Pots from './WEB/Potss/Pots';
 import Follow from './WEB/Instapage/Follow';
 import Welcome from './WEB/Nav/Welcome';
@@ -23,7 +23,7 @@ import Homm from './WEB/Homm';
 import Cart from './Pages/Shops/Cart';
 
 import Contact from './Pages/Contact/Contact';
-import './WEB/Product/Product.css';
+// import './WEB/Product/Product.css';
 import Firstpage from './WEB/Home1/Firstpage';
 import Woodenpage from './Pages/Woodenhome/Woodenpage';
 import Signpage from './Pages/Page/Signin/Signpage';
@@ -32,11 +32,11 @@ import Filterv_2 from './Pages/Page/V2/Filterv_2';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Page from './WEB/HPage/Page';
 import Blog1 from './WEB/Blogs/Blog1';
-import ProductMap from './WEB/Product/ProductMap';
-import ProductCard from './WEB/Product/ProductCard';
-import store from './Redux/Store/Store';
-import { Provider } from 'redux';
-import ProductData from './WEB/Product/ProductData';
+
+import store from '../src/Store/Store';
+import {Provider } from 'react-redux';
+import ProductDetails from './WEB/Product/ProductDetails';
+
 
 function App() {
   return (
@@ -50,7 +50,7 @@ function App() {
             <Header_2/>
             {/* <SHopfilter/> */}
             {/* <Filterv_2/> */}
-          <Routes>
+           <Routes>
               <Route path='/' element={<Firstpage/>}/>
               <Route path='/woodenpage' element={<Woodenpage/>}/>  
               <Route path='/shop' element={<Shop/>}/> 
@@ -60,15 +60,16 @@ function App() {
               <Route path='/contact' element={<Contact/>}/> 
               <Route path='/signpage' element={<Signpage/>}/> 
               <Route path='/cart' element={ <Cart/>}/>
-              <Route path="/productCard/:id" element={<ProductCard/>}/>
+              <Route path='/product/:id' element={<ProductDetails/>}/>
               <Route path='*' element={<Navigaionerr/>}/>
           </Routes>
            
-       </BrowserRouter> 
-      </Provider>
+       </BrowserRouter>  
              {/* <Signin/> */}
-            {/* <ProductMap/> */}
+            {/* <Pdata/> */}
+            {/* <ProductCard/> */}
         <Footer/> 
+      </Provider> 
     </div>
   );
 }

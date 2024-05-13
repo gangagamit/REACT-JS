@@ -4,10 +4,14 @@ import Header from '../Nav_1/Header'
 import Header_2 from '../Nav_2/Header_2'
 import Home from '../Sliderhome/Home'
 import TopCateg from '../Topcategories/TopCateg'
-import PopularProduct from '../Product/PopularProduct'
+// import PopularProduct from '../Product/PopularProduct'
+// import ProductCard from '../Product/ProductCard'
 import Pots from '../Potss/Pots'
 import Follow from '../Instapage/Follow'
 import Footer from '../Footeer/Footer'
+// import ProductMap from '../Product/ProductMap'
+// import ProductCard from '../Product/ProductCard'
+import ProductDetails from '../Product/ProductDetails'
 
 function Firstpage() {
   return (
@@ -17,7 +21,7 @@ function Firstpage() {
         <Header_2/> */}
         <Home/>
         <TopCateg/>
-        <PopularProduct/>
+        <ProductDetails/>
         <Pots/>
         <Follow/>
     </div>
