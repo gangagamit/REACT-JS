@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import img1 from '../../../Image/login-bg.jpg';
 import img2 from '../../../Image/sign-bg.jpg';
 import { Link } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 function Signpage() {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const [email,setEmail] = useState("");
     const [password,setPassword]= useState("");
 
@@ -20,7 +20,19 @@ function Signpage() {
             alert("succesfully register");
             localStorage.setItem("Email",email);
             localStorage.setItem("password",password);
-            // navigate("/");
+             navigate("/");
+        }
+    }
+    function OnsubmitLogin(e){
+        e.preventDefault();
+        if(!email && ! password){
+            alert("plz fill all field");
+        }
+        else if(email !== getEmail && password !== getPassword){
+                alert("plz fill this field")
+        }
+        else{
+            alert("succesfully login");
         }
     }
   return (
@@ -58,16 +70,16 @@ function Signpage() {
                             </div>
                             {/* form start */}
                             <div>
-                                <form className='p-3'>
+                                <form onSubmit={OnsubmitLogin} className='p-3'>
                                     <div className='bg-white h-16 w-full   rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-regular fa-user "></i></span>
-                                        <input placeholder='Username/email address' type='text' className=' outline-none' />
+                                        <input  onChange={(e)=>setEmail(e.target.value)} placeholder='Username/email address' type='text' className=' outline-none' />
                                     </div>
                                     <div className='bg-white h-16 w-full mt-5  rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-solid fa-key"></i></span>
-                                        <input placeholder='Password' type='text' className=' outline-none' />
+                                        <input  onChange={(e)=>setPassword(e.target.value)}placeholder='Password' type='text' className=' outline-none' />
                                     </div>
                                 </form>
                                 <div className='checbox flex justify-between items-center p-2'>

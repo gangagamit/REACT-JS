@@ -12,7 +12,7 @@ import Footer from '../Footeer/Footer'
 // import ProductMap from '../Product/ProductMap'
 // import ProductCard from '../Product/ProductCard'
 import ProductDetails from '../Product/ProductDetails'
-
+import ProduFeatur from '../Wproduct/ProduFeatur';
 function Firstpage() {
   return (
     <div>
@@ -21,7 +21,7 @@ function Firstpage() {
         <Header_2/> */}
         <Home/>
         <TopCateg/>
-        <ProductDetails/>
+        <ProduFeatur/>
         <Pots/>
         <Follow/>
     </div>
