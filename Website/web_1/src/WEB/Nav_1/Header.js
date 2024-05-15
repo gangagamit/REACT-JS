@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from '../../Image/logo.png';
 import img5 from '../../Image/lang-flag.png';
 import '../../WEB/responsive.css';
+import { Link } from 'react-router-dom';
 function Header() {
     return (
             <div className=' container mx-auto flex justify-between items-center p-3'>
@@ -63,7 +64,7 @@ function Header() {
                               
                         <ul className='flex icon justify-center items-center'>
                             <li><a href='#' className='absolute zero'>0</a></li>
-                            <li><a href='#' ><i class="ri-shopping-cart-2-line text-2xl text-black"></i></a></li>
+                            <li><Link to='/cart' ><i class="ri-shopping-cart-2-line text-2xl text-black"></i></Link></li>
                             <li className='sm:hidden lg:block'><a href='#'><i class="fa-regular fa-user text-xl mx-2 text-black"></i></a></li>
                             <li><a href='#' className='absolute zero-1'>0</a></li>
                             <li><a href='#'><i class="fa-regular fa-heart text-xl text-black -mx-11"></i></a></li>

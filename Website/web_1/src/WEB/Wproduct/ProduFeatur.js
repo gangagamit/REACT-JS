@@ -18,7 +18,7 @@ function ProduFeatur() {
 
         <div className=' grid  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5'>
                {Data.map((cvalue,id)=>{
-                 return <ProductCard key={id} img1 = {cvalue.img1} name = {cvalue.name}  price = {cvalue.price} />
+                 return <ProductCard key={id} img1 = {cvalue.img1} img2 ={cvalue.img2} name = {cvalue.name}  price = {cvalue.price} />
                })}
         </div>
     </div>

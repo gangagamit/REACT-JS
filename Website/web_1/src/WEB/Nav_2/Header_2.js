@@ -35,7 +35,7 @@ function Header_2() {
                                 <div className='homelist z-10'>
                                     <li><a href='#' className=' hover:text-pink-500'>Shop</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Shop2</a></li>
-                                    <li><a href='#' className=' hover:text-pink-500'>Shop Details</a></li>
+                                    <li><Link to='/ShopDetails' className=' hover:text-pink-500'>Shop Details</Link></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Shop Details 2</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Shop location</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Cart</a></li>

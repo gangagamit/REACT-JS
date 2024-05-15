@@ -38,6 +38,7 @@ import {Provider } from 'react-redux';
 // import Productdetails from './WEB/productdata/Productdetails/Productdetails';
 
 // import ProductH from './WEB/Product/ProductH';
+import ShopDetails from './Pages/Shops/ShopDetails';
 import ProduFeatur from './WEB/Wproduct/ProduFeatur';
 function App() {
   return (
@@ -61,6 +62,7 @@ function App() {
               <Route path='/contact' element={<Contact/>}/> 
               <Route path='/signpage' element={<Signpage/>}/> 
               <Route path='/cart' element={ <Cart/>}/>
+              <Route path='/ShopDetails' element={<ShopDetails/>}/>
               <Route path='/product/:id' element={ <ProduFeatur/>}/> 
               <Route path='*' element={<Navigaionerr/>}/>
           </Routes>
