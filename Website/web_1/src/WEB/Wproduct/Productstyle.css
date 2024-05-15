@@ -2,7 +2,7 @@
     z-index: 9;
 }
 
-.img-data {
+.card {
     position: relative;
     opacity: 1;
 }
@@ -12,17 +12,17 @@
     top: 0;
     left: 0;
     opacity: 0;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; 
     cursor: pointer;
 }
 
-.img-data:hover .sec-img {
+ .card:hover .sec-img {
     opacity: 1;
-}
+} 
 
-.img-data:hover {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
+ .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+} 
 
 .circle-1
 {
@@ -75,7 +75,7 @@
     background-color: purple;
 }
 
-.img-data:hover .dot {
+.card:hover .dot {
     opacity: 1 !important;
 }
 .star ul li a i {
@@ -92,7 +92,6 @@ ul li span {
     top: calc(150px);
     margin-left: 50px;
     text-align: center;
-    transform: translateY(-50%);
 }
 
 .product-action {

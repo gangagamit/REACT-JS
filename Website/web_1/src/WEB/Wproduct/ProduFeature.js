@@ -33,8 +33,8 @@ function ProduFeature() {
           }
 
           return (
-            <div className="sm:h-[25rem] md:h-[24rem] lg:h-[26rem] w-[18.5rem] mapdata relative" key={ind}>
-              <div className="img-data p-4 absolute bg-white rounded-lg">
+            <div className="sm:h-[25rem] md:h-[24rem] lg:h-[25rem] w-[18.5rem] mapdata relative" key={ind}>
+              <div className="card p-4 absolute bg-white rounded-lg">
 
                 <div className="hover:rounded-lg ">
                   <div>
@@ -80,7 +80,7 @@ function ProduFeature() {
                             <a href="#"><i className="fas fa-star tex-xl"></i></a>
                             <a href="#"><i className="far fa-star tex-xl"></i></a>
                           </li>
-                          <li><span>(81)</span></li>
+                          <li><p className=' text-xl'>(81)</p></li>
                         </ul>
                       </div>
                     </div>
