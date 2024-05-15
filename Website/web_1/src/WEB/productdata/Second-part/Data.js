@@ -27,21 +27,21 @@ const Data = [
         price: "$20.00",
         FirstImg:Product1,
         SecondeImg: Product2,
-        id:"0",
+        id:1,
     },
     {
         name: "Allie Sharp",
         price: "$30.00",
         FirstImg: Product3,
         SecondeImg: Product4,
-        id:"1",
+        id:2,
     },
     {
         name: "Nathaniel Baldwin",
         price: "$40.00",
         FirstImg: Product5,
         SecondeImg: Product6,
-        id:"2",
+        id:3,
 
     },
     {
@@ -49,7 +49,7 @@ const Data = [
         price: "$40.00",
         FirstImg: Product7,
         SecondeImg: Product8,
-        id:"3",
+        id:4,
 
     },
     {
@@ -57,7 +57,7 @@ const Data = [
         price: "$50.00",
         FirstImg: Product9,
         SecondeImg: Product10,
-        id:"4",
+        id:5,
 
     },
     {
@@ -65,7 +65,7 @@ const Data = [
         price: "$60.00",
         FirstImg: Product11,
         SecondeImg: Product12,
-        id:"5",
+        id:6,
 
     },
     {
@@ -73,7 +73,7 @@ const Data = [
         price: "$70.00",
         FirstImg: Product13,
         SecondeImg: Product14,
-        id:"6",
+        id:7,
 
     },
     {
@@ -81,7 +81,7 @@ const Data = [
         price: "$80.00",
         FirstImg: Product15,
         SecondeImg: Product16,
-        id:"7",
+        id:8,
 
     },
     {
@@ -89,7 +89,7 @@ const Data = [
         price: "$90.00",
         FirstImg: Product17,
         SecondeImg: Product18,
-        id:"8",
+        id:9,
 
     },
     {
@@ -97,7 +97,7 @@ const Data = [
         price: "$100.00",
         FirstImg: Product19,
         SecondeImg: Product20,
-        id:"9",
+        id:10,
 
     },
     

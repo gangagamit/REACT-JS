@@ -3,7 +3,10 @@ import img1 from '../../Image/logo.png';
 import img5 from '../../Image/lang-flag.png';
 import '../../WEB/responsive.css';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 function Header() {
+    const data = useSelector( (state)=>state.Cartreducer.carts);
+    console.log(data,"data,lenght");
     return (
             <div className=' container mx-auto flex justify-between items-center p-3'>
                 <button className='h-btn  sm:block  lg:hidden '><i class="fa-solid fa-bars"></i></button>
@@ -63,11 +66,11 @@ function Header() {
                                 </li>
                               
                         <ul className='flex icon justify-center items-center'>
-                            <li><a href='#' className='absolute zero'>0</a></li>
+                            <li><a href='#' className='absolute zero'>{data.length}</a></li>
                             <li><Link to='/cart' ><i class="ri-shopping-cart-2-line text-2xl text-black"></i></Link></li>
                             <li className='sm:hidden lg:block'><a href='#'><i class="fa-regular fa-user text-xl mx-2 text-black"></i></a></li>
                             <li><a href='#' className='absolute zero-1'>0</a></li>
-                            <li><a href='#'><i class="fa-regular fa-heart text-xl text-black -mx-11"></i></a></li>
+                            <li><Link to='/wishlist'><i class="fa-regular fa-heart text-xl text-black -mx-11"></i></Link></li>
                         </ul>
                             </ul>
                         </nav>

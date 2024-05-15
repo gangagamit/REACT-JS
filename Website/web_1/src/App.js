@@ -35,17 +35,15 @@ import Blog1 from './WEB/Blogs/Blog1';
 
 import store from '../src/Store/Store';
 import {Provider } from 'react-redux';
-// import Productdetails from './WEB/productdata/Productdetails/Productdetails';
+
 
 // import ProductH from './WEB/Product/ProductH';
 import ShopDetails from './Pages/Shops/ShopDetails';
-import ProduFeatur from './WEB/Wproduct/ProduFeatur';
+
 function App() {
   return (
-   
-  
     <div className="App">
-      {/* <Provider store={store}> */}
+       <Provider store={store}> 
        <BrowserRouter>
             <Welcome/>
             <Header/>
@@ -62,19 +60,16 @@ function App() {
               <Route path='/contact' element={<Contact/>}/> 
               <Route path='/signpage' element={<Signpage/>}/> 
               <Route path='/cart' element={ <Cart/>}/>
-              <Route path='/ShopDetails' element={<ShopDetails/>}/>
-              <Route path='/product/:id' element={ <ProduFeatur/>}/> 
+              {/* <Route path='/shopDetails/:id' element={<ShopDetails/>}/> */}
+              <Route path='/product/:id' element={<ShopDetails/>}/>  
+               
               <Route path='*' element={<Navigaionerr/>}/>
           </Routes>
            
        </BrowserRouter>  
              {/* <Signin/> */}
-            {/* <Pdata/> */}
-            {/* <ProductCard/> */}
-            {/* <ProductH/> */}
-            {/* <ProduFeatur/> */}
         <Footer/> 
-      {/* </Provider>  */}
+       </Provider>
     </div>
   );
 }

@@ -12,7 +12,8 @@ import Footer from '../Footeer/Footer'
 // import ProductMap from '../Product/ProductMap'
 // import ProductCard from '../Product/ProductCard'
 import ProductDetails from '../Product/ProductDetails'
-import ProduFeatur from '../Wproduct/ProduFeatur';
+import Productdetails from '../productdata/Productdetails/Productdetails'
+import ProduFeature from '../Wproduct/ProduFeature';
 function Firstpage() {
   return (
     <div>
@@ -21,7 +22,8 @@ function Firstpage() {
         <Header_2/> */}
         <Home/>
         <TopCateg/>
-        <ProduFeatur/>
+        <ProduFeature/> 
+        {/* <Productdetails/> */}
         <Pots/>
         <Follow/>
     </div>

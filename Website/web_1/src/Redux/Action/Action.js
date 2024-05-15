@@ -10,4 +10,10 @@ export const REMOVE = (id)=>{
         payload:id
     }
 }
+export const WADD = (item) => {
+    return {
+        type:"WADD_TO_CART",
+        payload:item
+    }
+}
 
