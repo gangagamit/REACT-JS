@@ -6,6 +6,14 @@ import { useDispatch } from 'react-redux';
 import { ADD,WADD } from "../../Redux/Action/Action";
 function ProduFeature() {
   const dispatch = useDispatch();
+  const send1 = (e) => {
+           
+    dispatch(ADD(e))
+ }
+ const send2 = (e) => {
+    dispatch(WADD(e))
+ }
+
   return (
     <div className=' container  pt-16'>
         <div className=' lg:flex  justify-between items-center'>
@@ -24,13 +32,7 @@ function ProduFeature() {
         {Data.map((cvalue, ind, array) => {
           const product = {cvalue}
 
-          const send1 = (e) => {
-           
-             dispatch(ADD(e))
-          }
-          const send2 = (e) => {
-             dispatch(WADD(e))
-          }
+          
 
           return (
             <div className="sm:h-[25rem] md:h-[24rem] lg:h-[25rem] w-[18.5rem] mapdata relative" key={ind}>
