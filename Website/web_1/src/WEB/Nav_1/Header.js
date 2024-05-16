@@ -5,8 +5,8 @@ import '../../WEB/responsive.css';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 function Header() {
-    const data = useSelector( (state)=>state.Cartreducer.carts);
-    console.log(data,"data,lenght");
+    const count = useSelector( (state)=>state.Cartreducer.carts);
+    console.log(count,"count,lenght");
     return (
             <div className=' container mx-auto flex justify-between items-center p-3'>
                 <button className='h-btn  sm:block  lg:hidden '><i class="fa-solid fa-bars"></i></button>
@@ -66,7 +66,7 @@ function Header() {
                                 </li>
                               
                         <ul className='flex icon justify-center items-center'>
-                            <li><a href='#' className='absolute zero'>{data.length}</a></li>
+                            <li><a href='#' className='absolute zero'>{count.lenght}</a></li>
                             <li><Link to='/cart' ><i class="ri-shopping-cart-2-line text-2xl text-black"></i></Link></li>
                             <li className='sm:hidden lg:block'><a href='#'><i class="fa-regular fa-user text-xl mx-2 text-black"></i></a></li>
                             <li><a href='#' className='absolute zero-1'>0</a></li>
