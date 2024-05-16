@@ -10,7 +10,7 @@ function Wishlist() {
     const Data = useSelector((state) => state.wishreducer.wish)
     const dispatch = useDispatch();
     const remove = (id)=>{
-        dispatch(WREMOVE(id));
+    dispatch(WREMOVE(id));
     }
   return (
     <div className=' container'>
