@@ -32,12 +32,8 @@ import Filterv_2 from './Pages/Page/V2/Filterv_2';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Page from './WEB/HPage/Page';
 import Blog1 from './WEB/Blogs/Blog1';
-
 import store from '../src/Store/Store';
 import {Provider } from 'react-redux';
-
-
-// import ProductH from './WEB/Product/ProductH';
 import ShopDetails from './Pages/Shops/ShopDetails';
 
 function App() {
