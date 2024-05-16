@@ -1,8 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../Shops/Cart.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { REMOVE } from '../../Redux/Action/Action';
 function Cart() {
 
+    const Data = useSelector((state) => state.Cartreducer.carts)
+    const dispatch = useDispatch();
+    const remove = (id)=>{
+        dispatch(REMOVE(id));
+    }
     return (
         <div>
             {/* bg-img*/}
@@ -35,8 +42,31 @@ function Cart() {
                                 </tr>
                             </thead>
                             <tbody>
-
-                            </tbody>
+                    {Data.length ?
+                        Data.map((cvalue, ind) => {
+                            console.log(cvalue,"cvalue");
+                            const {name , price ,  imgg1 , id} = cvalue.cvalue;
+                            return (
+                                <>
+                                    <tr className='border' key={id}>
+                                        <td className=' flex justify-center'>
+                                            <img src={imgg1} alt="" height={130} width={130} className='py-3' />
+                                        </td>
+                                        <td className=' border w-[10rem] text-center mx-[25rem]'>{name}</td>
+                                        <td className='border text-center' >{price}</td>
+                                        <td className='border items-center w-[12rem]' >
+                                            <div className='border py-4  mx-[4rem] flex justify-center rounded '>
+                                                <input type="number" defaultValue={1} className='outline-none border-none focus:border-none mx-2' />
+                                            </div>
+                                        </td>
+                                        <td className='border text-center' >{price}</td>
+                                         <td className='text-center' ><button onClick={() => remove(id)}>Remove</button></td> 
+                                    </tr>
+                                </>
+                            )
+                        })
+                    : <h1 className='text-[35px] font-bold'>cart is empty...........</h1>}
+                        </tbody> 
                         </table>
                     </div>
 

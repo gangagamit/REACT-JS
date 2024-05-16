@@ -6,10 +6,10 @@ import { useDispatch } from 'react-redux';
 import { ADD,WADD } from "../../Redux/Action/Action";
 function ProduFeature() {
   const dispatch = useDispatch();
-  const send1 = (e) => {
+//    const send1 = (e) => {
            
-    dispatch(ADD(e))
- }
+//     dispatch(ADD(e))
+//  }
  const send2 = (e) => {
     dispatch(WADD(e))
  }
@@ -32,7 +32,10 @@ function ProduFeature() {
         {Data.map((cvalue, ind, array) => {
           const product = {cvalue}
 
-          
+          const send1 = (e) => {
+           
+            dispatch(ADD(e))
+         }
 
           return (
             <div className="sm:h-[25rem] md:h-[24rem] lg:h-[25rem] w-[18.5rem] mapdata relative" key={ind}>
@@ -63,7 +66,7 @@ function ProduFeature() {
                         <Link to=""  onClick={() => send1(product)} className="add-to-cart"><i className="fa-solid fa-basket-shopping"></i></Link>
                         <a href=""><i className="fa-solid fa-arrow-right-arrow-left"></i></a>
                         <a href=""><i className="fa-regular fa-eye"></i></a>
-                        <Link to=""  onClick={() => send2(product)} className="add-to-heart"><i className="fa-regular fa-heart"></i></Link>
+                         <Link to=""  onClick={() => send2(product)} className="add-to-heart"><i className="fa-regular fa-heart"></i></Link> 
                       </div>
                     </div>
                     <div className="flex justify-between ">
@@ -73,7 +76,7 @@ function ProduFeature() {
                         <a href="" className="circle-3"></a>
                         <a href="" className="circle-4"></a>
                       </div>
-                      <div className='star' >
+                      <div className='star'>
                         <ul className='flex -mt-5 '>
                           <li>
                             <a href="#"><i className="fas fa-star tex-xl"></i></a>
