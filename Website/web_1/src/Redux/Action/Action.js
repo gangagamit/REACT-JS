@@ -18,7 +18,7 @@ export const WADD = (item) => {
 }
 export const WREMOVE = (id)=>{
     return {
-        type:"REMOVE_TO_CART",
+        type:"WREMOVE_TO_CART",
         payload:id
     }
 }

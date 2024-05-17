@@ -3,14 +3,18 @@ import { useSelector,useDispatch } from 'react-redux';
 import '../Shops/Wishstyle.css';
 import Footer from '../../WEB/Footeer/Footer';
 import { Link } from 'react-router-dom';
-import { WREMOVE } from '../../Redux/Action/Action';
+import { WADD, WREMOVE ,ADD} from '../../Redux/Action/Action';
 
 function Wishlist() {
     
-    const Data = useSelector((state) => state.wishreducer.wish)
+    const wData = useSelector((state) => state.wishreducer.wish)
     const dispatch = useDispatch();
-    const remove = (id)=>{
+    const wremove = (id)=>{
     dispatch(WREMOVE(id));
+    }
+    const wsend= (e,id)=>{
+        dispatch(WREMOVE(id));
+        dispatch(ADD(e))
     }
   return (
     <div className=' container'>
@@ -48,8 +52,8 @@ function Wishlist() {
                         </thead>
 
                         <tbody>
-                    {Data.length ?
-                        Data.map((cvalue, ind) => {
+                    {wData.length ?
+                        wData.map((cvalue, ind) => {
                             console.log(cvalue,"cvalue");
                             const {name , price ,  imgg1 , id} = cvalue.cvalue;
                             return (
@@ -66,7 +70,8 @@ function Wishlist() {
                                             </div>
                                         </td>
                                         <td className='border text-center' >{price}</td>
-                                         <td className='text-center' ><button onClick={() => remove(id)}>Remove</button></td> 
+                                        <td className='border text-center'><button onClick={()=>wsend(cvalue,id)} className=' bg-red-600 text-white text-md font-medium' >Add to cart</button></td>
+                                         <td className='text-center'><button onClick={() => wremove(id)}>Remove</button></td> 
                                     </tr>
                                 </>
                             )

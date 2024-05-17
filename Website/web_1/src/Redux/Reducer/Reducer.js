@@ -26,18 +26,18 @@ export const Cartreducer = (state = initial_state, action) => {
 
 export const   wishreducer = (state = initial_state, action) => {
     switch (action.type) {
-        case "ADD_TO_CART":
+        case "WADD_TO_CART":
             return {
                 ...state,
                 wish: [...state.wish, action.payload]
             };
-        case "REMOVE_TO_CART":
-            const Data = state.wish.filter((el) => el.cvalue.id !== action.payload);
-            console.log(Data, "=====");
+        case "WREMOVE_TO_CART":
+            const wData = state.wish.filter((el) => el.cvalue.id !== action.payload);
+            console.log(wData, "=====");
             // console.log(id, "=====");
             return {
                 ...state,
-                wish: Data,
+                wish: wData,
             };
         default:
             return state;

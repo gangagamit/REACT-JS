@@ -6,10 +6,7 @@ import { useDispatch } from 'react-redux';
 import { ADD,WADD } from "../../Redux/Action/Action";
 function ProduFeature() {
   const dispatch = useDispatch();
-//    const send1 = (e) => {
-           
-//     dispatch(ADD(e))
-//  }
+
  const send2 = (e) => {
     dispatch(WADD(e))
  }
