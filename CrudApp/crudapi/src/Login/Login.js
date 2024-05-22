@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import '../Login/Login.css';
+import { TfiEmail } from "react-icons/tfi";
+import { CiLock } from "react-icons/ci";
 import { useNavigate } from 'react-router-dom';
 function Login() {
   
 
-  const history = useNavigate()
   const [inpval,setInpval] = useState({
     email:"",
     password:""
@@ -50,32 +52,35 @@ function Login() {
                 alert("Invalid user")
               }
               else {
-                console.log("user login succesfully");
-                history('/userdetails');
+                // console.log("user login succesfully");
+                localStorage.setItem("userlogin",JSON.stringify(getUser))
+                alert("login succesfully")
               }
           }
       }
    }
   return (
-    <div>
+    <div className='container'>
         
-        <section>
+        <section className='login-form'>
             <form>
-              <h1 className=' text-2xl font-semibold'>Login</h1>
-                <div>
-                
-                <input type='email' onChange={getData} name='email' className='form-control outline-0 border-[1px] ' placeholder='email'/>
+              <h1 className=' text-2xl font-semibold mt-5'>Login</h1>
+                <div className='mt-5 flex gap-2 bg-white w-80 h-11 justify-center items-center rounded'>
+                <span className='text-slate-500'><TfiEmail/></span>
+                <input type='email' onChange={getData} name='email' className='form-control outline-0  w-72' placeholder='email'>
+                 
+                </input>
               </div>
-              <div>
-                <label>Password</label><br/>
-                <input type='password' onChange={getData} name='password' className='form-control outline-0 border-[1px] ' placeholder='Enter password'/>
+              <div className='mt-5 flex gap-2 bg-white w-80 h-11 justify-center items-center rounded'>
+                <span className='text-slate-500'><CiLock/></span>
+                <input type='password' onChange={getData} name='password' className='form-control outline-0  w-72' placeholder='Enter password'/>
               </div>
               
-              <div>
-                <button type='submit' onClick={addData}>Login here</button>
+              <div className='mt-5'>
+                <button type='submit' onClick={addData} className=' border-[1px] w-40 p-1 text-xl font-semibold'>Login here</button>
               </div>
             </form>
-            <p>Already Have an Account <span>Login</span></p>
+          
         </section>
        
     </div>

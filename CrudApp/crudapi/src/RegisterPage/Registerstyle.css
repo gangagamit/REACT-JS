@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+.register-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #2f2d2d;
+
+}
+.register-f input,.register-e input,.register-p input{
+    background-color: rgb(60, 60, 60);
+}
+.register-f,.register-e,.register-p{
+    background-color: rgb(60, 60, 60);
+}
