@@ -74,12 +74,12 @@ function Signpage() {
                                     <div className='bg-white h-16 w-full   rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-regular fa-user "></i></span>
-                                        <input  onChange={(e)=>setEmail(e.target.value)} placeholder='Username/email address' type='text' className=' outline-none' />
+                                        <input  onChange={(e)=>setEmail(e.target.value)} placeholder='Username/email address' type='email' className=' outline-none' />
                                     </div>
                                     <div className='bg-white h-16 w-full mt-5  rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-solid fa-key"></i></span>
-                                        <input  onChange={(e)=>setPassword(e.target.value)}placeholder='Password' type='text' className=' outline-none' />
+                                        <input  onChange={(e)=>setPassword(e.target.value)} placeholder='Password' type='password' className=' outline-none' />
                                     </div>
                                 </form>
                                 <div className='checbox flex justify-between items-center p-2'>
@@ -92,7 +92,7 @@ function Signpage() {
                                     </div>
                                 </div>
                                 <div className=' bg-red-600 rounded h-14 flex justify-center items-center p-2'>
-                                    <button className='text-white text-lg font-semibold border-0'>Login Now
+                                    <button type="submit" className='text-white text-lg font-semibold border-0'>Login Now
                                         <i class="fa-solid fa-arrow-right mx-2"></i>
                                     </button>
                                 </div>
@@ -121,12 +121,12 @@ function Signpage() {
                                     <div className='bg-white h-16 w-full   rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-regular fa-envelope"></i></span>
-                                        <input onChange={(e)=>setEmail(e.target.value)}  type='text' placeholder='Email address' className=' outline-none' />
+                                        <input onChange={(e)=>setEmail(e.target.value)}  type='email' placeholder='Email address' className=' outline-none' />
                                     </div>
                                     <div className='bg-white h-16 w-full mt-5  rounded flex justify-center items-center gap-2 '>
 
                                         <span><i class="fa-solid fa-key"></i></span>
-                                        <input onChange={(e)=>setPassword(e.target.value)} placeholder='Password' type='text' name='text' className=' outline-none' />
+                                        <input onChange={(e)=>setPassword(e.target.value)} placeholder='Password' type='password' name='text' className=' outline-none' />
                                     </div>
                                 </form>
                                 <div className='checbox flex justify-between items-center p-2'>

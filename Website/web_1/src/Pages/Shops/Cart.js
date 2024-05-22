@@ -1,15 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../Shops/Cart.css';
+import { VscTriangleUp } from "react-icons/vsc";
 import { useDispatch, useSelector } from 'react-redux';
-import { REMOVE } from '../../Redux/Action/Action';
+import { VscTriangleDown } from "react-icons/vsc";
+import { REMOVE, CART_QUTY_ICREAMENT , CART_QUTY_DECREAMENT} from '../../Redux/Action/Action';
 function Cart() {
 
+    let Subtotal = 0;
+    const GST = 18.00;
+    let GstCount = 0;
     const Data = useSelector((state) => state.Cartreducer.carts)
     const dispatch = useDispatch();
-    const remove = (id)=>{
+    const remove = (id) => {
         dispatch(REMOVE(id));
     }
+
+    const increament_qnty = (item) => {
+        dispatch(CART_QUTY_ICREAMENT(item))
+    }
+    const decreament_qnty = (item) => {
+        dispatch(CART_QUTY_DECREAMENT(item))
+    }
+    GstCount += Subtotal * GST
     return (
         <div>
             {/* bg-img*/}
@@ -42,31 +55,38 @@ function Cart() {
                                 </tr>
                             </thead>
                             <tbody>
-                    {Data.length ?
-                        Data.map((cvalue, ind) => {
-                            console.log(cvalue,"cvalue");
-                            const {name , price ,  imgg1 , id} = cvalue.cvalue;
-                            return (
-                                <>
-                                    <tr className='border' key={id}>
-                                        <td className=' flex justify-center'>
-                                            <img src={imgg1} alt="" height={130} width={130} className='py-3' />
-                                        </td>
-                                        <td className=' border w-[10rem] text-center mx-[25rem]'>{name}</td>
-                                        <td className='border text-center' >{price}</td>
-                                        <td className='border items-center w-[12rem]' >
-                                            <div className='border py-4  mx-[4rem] flex justify-center rounded '>
-                                                <input type="number" defaultValue={1} className='outline-none border-none focus:border-none mx-2' />
-                                            </div>
-                                        </td>
-                                        <td className='border text-center' >{price}</td>
-                                         <td className='text-center' ><button onClick={() => remove(id)}>Remove</button></td> 
-                                    </tr>
-                                </>
-                            )
-                        })
-                    : <h1 className='text-[35px] font-bold'>cart is empty...........</h1>}
-                        </tbody> 
+                                {Data.length ?
+                                    Data.map((cvalue, ind) => {
+                                        console.log(cvalue, "cvalue");
+                                        const { name, price, imgg1, id, quantity, } = cvalue.cvalue;
+                                        Subtotal += quantity * price 
+                                        GstCount =  (Subtotal * GST)/100;
+                                        return (
+                                            <>
+                                                <tr className='border' key={id}>
+                                                    <td className=' flex justify-center'>
+                                                        <img src={imgg1} alt="" height={130} width={130} className='py-3' />
+                                                    </td>
+                                                    <td className=' border w-[10rem] text-center mx-[25rem]'>{name}</td>
+                                                    <td className='border text-center' >{price}</td>
+                                                    <td className='border items-center w-[12rem]' >
+                                                        <div className="quantity_input border rounded-md flex items-center justify-between p-4 cursor-pointer">
+                                                            <p className='text-xl font-semibold'>{quantity}</p>
+                                                            <p className='QUT-btn flex flex-col items-stretch justify-center'>
+                                                                <button onClick={() => increament_qnty(cvalue)} className='INCREASE_count flex items-center justify-center bg-gray-200 hover:bg-gray-300 transition-all py-[1.5px]' ><VscTriangleUp/></button>
+                                                                <button onClick={() => decreament_qnty(cvalue)} className='DECREASE_count flex items-center justify-center bg-gray-200 hover:bg-gray-300 transition-all py-[1.5px]'><VscTriangleDown/></button>
+                                                            </p>
+                                                        </div>
+
+                                                    </td>
+                                                    <td className='border text-center' >{quantity * price}</td>
+                                                    <td className='text-center' ><button onClick={() => remove(id)}>Remove</button></td>
+                                                </tr>
+                                            </>
+                                        )
+                                    })
+                                    : <pre className='text-2xl font-bold text-star'>Cart is empty........</pre>}
+                            </tbody>
                         </table>
                     </div>
 
@@ -82,10 +102,10 @@ function Cart() {
                         </div>
                     </div>
                 </div>
-                 <div className=' float-end'>
+                <div className=' float-end'>
 
                     <h3 className='text-2xl font-medium text-start'>Cart Totals</h3>
-                </div> 
+                </div>
                 <div className=' flex mt-10'>
 
 

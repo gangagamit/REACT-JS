@@ -3,7 +3,9 @@ import { useSelector,useDispatch } from 'react-redux';
 import '../Shops/Wishstyle.css';
 import Footer from '../../WEB/Footeer/Footer';
 import { Link } from 'react-router-dom';
-import { WADD, WREMOVE ,ADD} from '../../Redux/Action/Action';
+import {  WREMOVE ,ADD} from '../../Redux/Action/Action';
+
+
 
 function Wishlist() {
     

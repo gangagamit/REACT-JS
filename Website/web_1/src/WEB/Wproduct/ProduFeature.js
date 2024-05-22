@@ -4,12 +4,43 @@ import './Productstyle.css';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { ADD,WADD } from "../../Redux/Action/Action";
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+//cart-tostify function
+function showAlert(){
+  toast.success('This item added to cart', {
+    position: "bottom-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    });
+}
+//wishlist-tostify function
+function showAlertWhish(){
+  toast.success('This item added to whishlist', {
+    position: "bottom-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    });
+}
 function ProduFeature() {
   const dispatch = useDispatch();
 
  const send2 = (e) => {
+  showAlertWhish()
     dispatch(WADD(e))
  }
+
 
   return (
     <div className=' container  pt-16'>
@@ -30,7 +61,7 @@ function ProduFeature() {
           const product = {cvalue}
 
           const send1 = (e) => {
-           
+            showAlert();
             dispatch(ADD(e))
          }
 
@@ -93,6 +124,7 @@ function ProduFeature() {
           );
         })}
       </div>
+      <ToastContainer/>
     </div>
   )
 }

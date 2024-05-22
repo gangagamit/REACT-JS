@@ -21,7 +21,7 @@ function Header_2() {
                                     <p className=' hover:text-pink-500 font-semibold text-sm'>Home <span><i class="fa-solid fa-angle-down text-slate-400"></i></span></p>
                                 </Link>
                                 <div className='homelist z-10'>
-                                    <li><Link to="/woodenpage" className=' hover:text-pink-500'>Wooden Home</Link></li>
+                                    <li><a href='#'className=' hover:text-pink-500'>Wooden Home</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Fashion Home</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Furniture Home</a></li>
                                     <li><a href='#' className=' hover:text-pink-500'>Cosmetics Home</a></li>
@@ -55,7 +55,7 @@ function Header_2() {
                                         <ul>
 
                                             <li><a href='#' className=' font-semibold text-sm hover:text-pink-500'>page Layout</a></li>
-                                            <li><Link to='v1' className=' hover:text-pink-500'>Shop Filters V1</Link></li>
+                                            {/* <li><Link to='v1' className=' hover:text-pink-500'>Shop Filters V1</Link></li> */}
                                             <li><a href='#' className=' hover:text-pink-500'>Shop Filters V2</a></li>
                                             <li><a href='#' className=' hover:text-pink-500'>Shop Shidebar</a></li>
                                             <li><a href='#' className=' hover:text-pink-500'>Shop Right Shidebar</a></li>

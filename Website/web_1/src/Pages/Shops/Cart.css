@@ -8,5 +8,6 @@
 .hr-5{
     height: 2px;
     width: 30px;
-    background-color: rgb(194, 189, 189);
+    /* background-color: rgb(194, 189, 189); */
+    background-color: red;
 }

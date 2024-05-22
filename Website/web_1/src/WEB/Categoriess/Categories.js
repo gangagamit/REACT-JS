@@ -6,7 +6,7 @@ function Categories() {
         <nav>
         <ul>
         <li><a href='#'>
-            <button className='text'><i class="fa-solid fa-bars"></i><span>Categories</span></button></a>
+            <button className='text'><i class="fa-solid fa-bars"></i><span className='text-lg'>Categories</span></button></a>
             <div className='dropdown w-40 z-10'>
                 <ul>
                     <li><a href='#'><i class="fa-regular fa-user text-red-500"></i><span className='mx-2'>Candles</span></a></li>
