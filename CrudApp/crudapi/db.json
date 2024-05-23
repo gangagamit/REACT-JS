@@ -1,7 +1,31 @@
-[
-    {
-        "user":1,
-        "name":"ganga",
-        "email":"ganga07@gmail.com"
-    }
-]
+
+{
+    "user":[
+        {
+            "name":"ganga",
+            "age":"24",
+            "email":"ganga@gmail.com",
+            "password":"123456"
+        },
+        {
+            "name":"rohini",
+            "age":"24",
+            "email":"rohini@gmail.com",
+            "password":"1234567"
+        },
+        {
+            "name":"neha",
+            "age":"23",
+            "email":"neha@gmail.com",
+            "password":"123456"
+        },
+        {
+            "name":"amruta",
+            "age":"25",
+            "email":"amruta@gmail.com",
+            "password":"12345678"
+        }
+    ]
+
+    
+}
