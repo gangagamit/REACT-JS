@@ -4,6 +4,7 @@ import '../RegisterPage/Registerstyle.css';
 import { CiUser } from "react-icons/ci";
 import { TfiEmail } from "react-icons/tfi";
 import { CiLock } from "react-icons/ci";
+import Navbar from '../Navbar/Navbar';
 function Register() {
   const [inpval, setInpval] = useState({
     name: "",
@@ -50,6 +51,8 @@ function Register() {
 
 
   return (
+    <>
+      <Navbar/>
     <div className=' container'>
       <section className=' register-form'>
         <form>
@@ -87,6 +90,7 @@ function Register() {
       </section>
       
     </div>
+    </>
   )
 }
 
