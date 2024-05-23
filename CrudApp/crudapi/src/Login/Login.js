@@ -63,21 +63,21 @@ function Login() {
     <div className='container'>
         
         <section className='login-form'>
-            <form>
-              <h1 className=' text-2xl font-semibold mt-5'>Login</h1>
-                <div className='mt-5 flex gap-2 bg-white w-80 h-11 justify-center items-center rounded'>
+            <form className=' login'>
+              <h1 className='  text-2xl font-semibold mt-5 text-green-500'>Login</h1>
+                <div className=' login-e mt-5 flex gap-2 bg-white w-80 h-11 justify-center items-center rounded-2xl'>
                 <span className='text-slate-500'><TfiEmail/></span>
                 <input type='email' onChange={getData} name='email' className='form-control outline-0  w-72' placeholder='email'>
                  
-                </input>
+                </input>  
               </div>
-              <div className='mt-5 flex gap-2 bg-white w-80 h-11 justify-center items-center rounded'>
+              <div className=' login-p mt-5 flex gap-2 bg-white w-80 h-11 justify-center items-center rounded-2xl'>
                 <span className='text-slate-500'><CiLock/></span>
                 <input type='password' onChange={getData} name='password' className='form-control outline-0  w-72' placeholder='Enter password'/>
               </div>
               
               <div className='mt-5'>
-                <button type='submit' onClick={addData} className=' border-[1px] w-40 p-1 text-xl font-semibold'>Login here</button>
+                <button type='submit' onClick={addData} className=' text-white  w-40 p-1 text-lg font-semibold bg-green-500 rounded-2xl'>Login here</button>
               </div>
             </form>
           
