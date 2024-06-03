@@ -1,7 +1,8 @@
 import React from 'react'
-import { ArrowRight, Link } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { Navbar } from '../Navbar/Navbar'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 export default function Register() {
   const [inpval, setInpval] = useState({
     name: "",
@@ -55,13 +56,13 @@ export default function Register() {
             <p className="mt-2 text-base text-gray-600">
               Already have an account?{' '}
              
-              <a
+              <Link
                 href="/login"
                 title=""
                 className="font-medium text-black transition-all duration-200 hover:underline"
               >
                 Sign In
-              </a>
+              </Link>
               
             </p>
             <form action="#" method="POST" className="mt-8">

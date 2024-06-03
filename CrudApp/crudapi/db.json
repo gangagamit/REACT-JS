@@ -1,31 +1,28 @@
-
 {
-    "user":[
-        {
-            "name":"ganga",
-            "age":"24",
-            "email":"ganga@gmail.com",
-            "password":"123456"
-        },
-        {
-            "name":"rohini",
-            "age":"24",
-            "email":"rohini@gmail.com",
-            "password":"1234567"
-        },
-        {
-            "name":"neha",
-            "age":"23",
-            "email":"neha@gmail.com",
-            "password":"123456"
-        },
-        {
-            "name":"amruta",
-            "age":"25",
-            "email":"amruta@gmail.com",
-            "password":"12345678"
-        }
-    ]
-
-    
+  "user": [
+    {
+      "id": "9eb0",
+      "FirstName": "rohini",
+      "LastName": "chaudhari",
+      "Age": "14",
+      "City": "",
+      "city": "surat"
+    },
+    {
+      "id": "8b46",
+      "FirstName": "abc",
+      "LastName": "abc",
+      "Age": "15",
+      "City": "",
+      "city": "vadodara"
+    },
+    {
+      "id": "f7cd",
+      "FirstName": "mahi",
+      "LastName": "chaudhari",
+      "Age": "54",
+      "City": "",
+      "city": "surat"
+    }
+  ]
 }

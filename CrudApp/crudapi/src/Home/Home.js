@@ -1,7 +1,8 @@
 
 import React, { useEffect, useState } from 'react'
 import { Navbar } from '../Navbar/Navbar'
-import axios from 'axios'
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 // const people = [
 //   {
 //     name: 'John Doe',
@@ -24,7 +25,7 @@ import axios from 'axios'
 // ]
 
 export default function Home() {
-  const [user,setData] = useState([]);
+  const [data,setData] = useState([]);
 
   const userData = async()=>{
     const res = await axios.get("http://localhost:3000/user")
@@ -34,6 +35,19 @@ export default function Home() {
   useEffect(()=>{
     userData();
   },[])
+
+
+  const onDelete =((id)=>{
+      axios.delete(`http://localhost:3000/user/${id}`)
+      .then((res)=>{
+        userData();
+      })
+      .catch((error)=>{
+          console.log(error,"error")
+      })
+  })
+
+
   return (
     <>
     <Navbar/>
@@ -47,7 +61,7 @@ export default function Home() {
               type="button"
               className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
-              Add new employee
+              <Link to='/create'>Add new employee</Link>
             </button>
           </div>
         </div>
@@ -62,27 +76,27 @@ export default function Home() {
                         scope="col"
                         className="px-4 py-3.5 text-left text-sm font-normal text-gray-700"
                       >
-                        <span>Employee</span>
+                        <span>FirstName</span>
                       </th>
                       <th
                         scope="col"
                         className="px-12 py-3.5 text-left text-sm font-normal text-gray-700"
                       >
-                        Title
+                        LastName
+                      </th>
+
+                      <th
+                        scope="col"
+                        className="px-4 py-3.5 text-left text-sm font-normal text-gray-700"
+                      > 
+                        Age
                       </th>
 
                       <th
                         scope="col"
                         className="px-4 py-3.5 text-left text-sm font-normal text-gray-700"
                       >
-                        Status
-                      </th>
-
-                      <th
-                        scope="col"
-                        className="px-4 py-3.5 text-left text-sm font-normal text-gray-700"
-                      >
-                        Role
+                        City
                       </th>
                       <th scope="col" className="relative px-4 py-3.5">
                         <span className="sr-only">Edit</span>
@@ -93,45 +107,41 @@ export default function Home() {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 bg-white">
-                    {user.map((user) => (
-                      <tr key={user.name}>
+                    {data.map((user,index) => (
+                      <tr key={user.id}>
                         <td className="whitespace-nowrap px-4 py-4">
                           <div className="flex items-center">
-                            <div className="h-10 w-10 flex-shrink-0">
-                              <img
-                                className="h-10 w-10 rounded-full object-cover"
-                                src={user.image}
-                                alt=""
-                              />
-                            </div>
+                           
                             <div className="ml-4">
-                              <div className="text-sm font-medium text-gray-900">{user.name}</div>
-                              <div className="text-sm text-gray-700">{user.email}</div>
+                              <div className="text-sm font-medium text-gray-900">{user.FirstName}</div>
+
                             </div>
                           </div>
                         </td>
                         <td className="whitespace-nowrap px-12 py-4">
-                          <div className="text-sm text-gray-900 ">{user.title}</div>
-                          <div className="text-sm text-gray-700">{user.department}</div>
+                          <div className="text-sm text-gray-900 ">{user.LastName}</div>
                         </td>
                         <td className="whitespace-nowrap px-4 py-4">
                           <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
-                            Active
+                          {user.Age}
                           </span>
                         </td>
                         <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
-                          {user.role}
+                          {user.City}
                         </td>
                         <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
-                          <a href="#" className="text-gray-700">
-                            Edit
-                          </a>
-                        </td>
-                        <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
-                          <a href="#" className="text-gray-700">
+                          <div className=' flex gap-5'>
+                            <span>
+                          <Link to={`/edit/${user.id}`} className="text-gray-700">
+                           <button>Edit</button> 
+                          </Link>
+                          </span>
+                          <button onClick={()=>onDelete(user.id)}>
                             Delete
-                          </a>
+                          </button>
+                          </div>
                         </td>
+                       
                       </tr>
                     ))}
                   </tbody>

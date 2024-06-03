@@ -1,6 +1,7 @@
 const initial_state = {
     carts: [],
     wish:[],
+    quantities: [],
 };
 //cart add and remove part
 export const Cartreducer = (state = initial_state, action) => {
@@ -18,49 +19,14 @@ export const Cartreducer = (state = initial_state, action) => {
                 carts: Data,
             };
 
-        // case "UPDATE_QUANTITY":
-        //         return {
-        //             ...state,
-        //             quantities: {
-        //                 ...state.quantities,
-        //                 [action.payload.id]: action.payload.quantity
-        //             }
-        //         }
-
-        case "CART_ITEM_ICREAMENT":{
-            let updateQunty =  state.carts.map(item =>{
-                if(item.id === action.payload.id){
-                    return{
-                        ...item,
-                        quantity: item.quantity+1
-                    };
-                }
-                return item;
-            })
-            return{
-                ...state,
-                carts:updateQunty
-            };
-        }
-
-        case "CART_ITEM_DECREAMENT":{
-            let updateQunty = state.carts;
-            if(action.payload.quantity !== 1){
-                updateQunty = state.carts.map(item =>{
-                    if(item.id === action.payload.id){
-                        return{
-                            ...item,
-                            quantity: item.quantity -1
-                        };
+            case "UPDATE_QUANTITY":
+                return {
+                    ...state,
+                    quantities: {
+                        ...state.quantities,
+                        [action.payload.id]: action.payload.quantity
                     }
-                    return item;
-                });
-            }
-            return {
-                ...state,
-                carts:updateQunty
-            };
-        }
+                }       
             default:
             return state;
     }
