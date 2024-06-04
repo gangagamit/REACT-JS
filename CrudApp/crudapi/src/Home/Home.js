@@ -3,26 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { Navbar } from '../Navbar/Navbar'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-// const people = [
-//   {
-//     name: 'John Doe',
-//     title: 'Front-end Developer',
-//     department: 'Engineering',
-//     email: 'john@devui.com',
-//     role: 'Developer',
-//     image:
-//       'https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80',
-//   },
-//   {
-//     name: 'Jane Doe',
-//     title: 'Back-end Developer',
-//     department: 'Engineering',
-//     email: 'jane@devui.com',
-//     role: 'CTO',
-//     image:
-//       'https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80',
-//   },
-// ]
 
 export default function Home() {
   const [data,setData] = useState([]);
@@ -127,7 +107,9 @@ export default function Home() {
                           </span>
                         </td>
                         <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
+                        <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
                           {user.City}
+                          </span>
                         </td>
                         <td className="whitespace-nowrap px-4 py-4 text-right text-sm font-medium">
                           <div className=' flex gap-5'>

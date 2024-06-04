@@ -19,13 +19,14 @@ export default function Edit() {
     const res = await axios.get(`http://localhost:3000/user/${id}`)
     console.log(res.data,"res");
     setData(res.data)
+    // console.log(data,"data.....")
   }
   useEffect(()=>{
     userData();
   },[])
     const OnsubmitFun = async(e)=>{
       e.preventDefault();
-     await axios.put(`http://localhost:3000/user`,student)
+     await axios.put(`http://localhost:3000/user/${id}`,student)
       navigate("/");
     }
   return (
