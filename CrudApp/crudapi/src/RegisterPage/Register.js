@@ -57,7 +57,7 @@ export default function Register() {
               Already have an account?{' '}
              
               <Link
-                href="/login"
+              to="/login"
                 title=""
                 className="font-medium text-black transition-all duration-200 hover:underline"
               >

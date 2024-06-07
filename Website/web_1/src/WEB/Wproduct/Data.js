@@ -30,7 +30,7 @@ const Data = [
         imgg1: proimg1,
         img2:proimg2,
         name:"Bradley Burgess 2",
-        price:"$20.00",
+        price:20.00,
         quantity:1
     },
     {
@@ -38,7 +38,7 @@ const Data = [
         imgg1: proimg3,
         img2: proimg4,
         name:"Allie Sharp",
-        price:"$30.00",
+        price:30.00,
         quantity:1
     },
     {
@@ -46,7 +46,7 @@ const Data = [
         imgg1: proimg5,
         img2: proimg6,
         name:"Nathaniel Baldwin",
-        price:"$40.00",
+        price:40.00,
         quantity:1
     },
     {
@@ -54,7 +54,7 @@ const Data = [
         imgg1: proimg7,
         img2: proimg8,
         name:"Effie Rios",
-        price:"$40.00",
+        price:40.00,
         quantity:1
     },
     {
@@ -62,7 +62,7 @@ const Data = [
         imgg1: proimg9,
         img2: proimg10,
         name:"Carolyn Goodwin",
-        price:"$50.00",
+        price:50.00,
         quantity:1
     },
     {
@@ -70,7 +70,7 @@ const Data = [
         imgg1: proimg11,
         img2: proimg12,
         name:"Evelyn Patton",
-        price:"$60.00",
+        price:60.00,
         quantity:1
     },
     {
@@ -78,7 +78,7 @@ const Data = [
         imgg1: proimg13,
         img2: proimg14,
         name:"Sally Ray",
-        price:"$70.00",
+        price:70.00,
         quantity:1
     },
     {
@@ -86,7 +86,7 @@ const Data = [
         imgg1: proimg15,
         img2: proimg16,
         name:"Ora Bowman",
-        price:"$80.00",
+        price:80.00,
         quantity:1
     },
     {
@@ -94,7 +94,7 @@ const Data = [
         imgg1: proimg17,
         img2: proimg18,
         name:"Frederick Valdez",
-        price:"$90.00",
+        price:90.00,
         quantity:1
     },
     {
@@ -102,7 +102,7 @@ const Data = [
         imgg1: proimg19,
         img2: proimg20,
         name:"Terry Byrd",
-        price:"$100.00",
+        price:100.00,
         quantity:1
     },
 

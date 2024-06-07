@@ -1,60 +1,52 @@
 {
   "user": [
     {
-      "FirstName": "sdwd",
+      "FirstName": "ganga",
+      "LastName": "gamit",
+      "Age": "24",
+      "City": "",
+      "city": "surat",
+      "id": "8b46"
+    },
+    {
+      "FirstName": "ruhan",
       "LastName": "patel",
-      "Age": "23",
-      "City": "",
-      "city": "sd",
-      "id": "9eb0"
+      "Age": "24",
+      "City": "vyra",
+      "city": "vyra",
+      "id": "f7cd"
     },
     {
-      "id": "8b46",
-      "FirstName": "abc",
-      "LastName": "abc",
-      "Age": "15",
+      "FirstName": "devolina",
+      "LastName": "patel",
+      "Age": "24",
       "City": "",
-      "city": "vadodara"
-    },
-    {
-      "id": "f7cd",
-      "FirstName": "mahi",
-      "LastName": "chaudhari",
-      "Age": "54",
-      "City": "",
-      "city": "surat"
-    },
-    {
-      "id": "94b9",
-      "FirstName": "sdwd",
-      "LastName": "wws",
-      "Age": "23",
-      "City": "",
-      "city": "dsf"
+      "city": "vyra",
+      "id": "94b9"
     },
     {
       "FirstName": "ganga",
-      "LastName": "gamit",
+      "LastName": "patel",
       "Age": "22",
       "City": "",
-      "city": "dfd",
+      "city": "surat",
       "id": "4355"
     },
     {
-      "id": "07bb",
-      "FirstName": "asa",
-      "LastName": "qs",
-      "Age": "45",
+      "FirstName": "sayli",
+      "LastName": "gamit",
+      "Age": "25",
       "City": "",
-      "city": "wq"
+      "city": "ahmdabad",
+      "id": "07bb"
     },
     {
-      "id": "26bc",
-      "FirstName": "sd",
-      "LastName": "sds",
-      "Age": "21",
+      "id": "d6db",
+      "FirstName": "hina",
+      "LastName": "patel",
+      "Age": "23",
       "City": "",
-      "city": "sd"
+      "city": "vadodra"
     }
   ]
 }
