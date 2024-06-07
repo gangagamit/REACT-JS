@@ -8,6 +8,10 @@ export default function Home() {
   const [data,setData] = useState([]);
   const [searchData,setSearchData] = useState("")
   const [curentPage ,setCurrentPage] = useState(1)
+  const filterData = data.filter(users=>users.FirstName.toLowerCase().includes(searchData.toLowerCase())
+  ||
+    users.LastName.toLowerCase().includes(searchData.toLowerCase())
+  )
   const recordPage= 1;
   const LastIndex = curentPage * recordPage;
   const FirstIndex = LastIndex - recordPage;
@@ -20,10 +24,10 @@ export default function Home() {
     console.log(res.data,"res");
     setData(res.data)
   }
-  const filterData = data.filter(users=>users.FirstName.toLowerCase().includes(searchData.toLowerCase())
-||
-  users.LastName.toLowerCase().includes(searchData.toLowerCase())
-)
+//   const filterData = data.filter(users=>users.FirstName.toLowerCase().includes(searchData.toLowerCase())
+// ||
+//   users.LastName.toLowerCase().includes(searchData.toLowerCase())
+// )
   useEffect(()=>{
     userData();
   },[])
@@ -151,8 +155,7 @@ export default function Home() {
                             Delete
                           </button>
                           </div>
-                        </td>
-                       
+                        </td> 
                       </tr>
                     ))}
                   </tbody>
