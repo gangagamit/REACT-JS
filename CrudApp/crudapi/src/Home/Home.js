@@ -12,7 +12,7 @@ export default function Home() {
   ||
     users.LastName.toLowerCase().includes(searchData.toLowerCase())
   )
-  const recordPage= 1;
+  const recordPage= 2;
   const LastIndex = curentPage * recordPage;
   const FirstIndex = LastIndex - recordPage;
   const record = filterData.slice(FirstIndex,LastIndex);
@@ -66,8 +66,8 @@ export default function Home() {
           </div>
           <div>
             <input onChange={(e)=>setSearchData(e.target.value)} type='text' 
-            placeholder='search here..'
-            className='bg-gray-100 outline-0 w-72 h-8'></input>
+            placeholder='  search here..'
+            className='bg-gray-100 outline-0 w-72 h-8 rounded'></input>
           </div>
           <div>
             <button
