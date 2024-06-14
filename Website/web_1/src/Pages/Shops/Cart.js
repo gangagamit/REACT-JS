@@ -30,10 +30,12 @@ function Cart() {
   };
 
   let Subtotal = 0;
+  console.log(Subtotal,"dhiseyriui");
   Data.forEach((item) => {
-    const quantity = quantities[item.id] || 1;
-    Subtotal += item.price * quantity;
+    const quantity = quantities[item.cvalue.id] || 1;
+    Subtotal += item.cvalue.price * quantity;
   });
+
 
   const Taxes = 9.00;
 
@@ -58,7 +60,7 @@ function Cart() {
             </tr>
           </thead>
           <tbody>
-            {Data.length ? 
+            {Data.length ?
               Data.map((cvalue) => {
                 let { imgg1, price, name, id } = cvalue.cvalue;
                 const quantity = quantities[id] || 1;
@@ -79,7 +81,7 @@ function Cart() {
                           onChange={(event) => changeQuantity(event, id)}
                           type="number"
                           name="number"
-                          defaultValue={quantity}
+                          defaultValue={1}
                           className='outline-none input-number border-none focus:border-none mx-2'
                           min="1"
                         />
